@@ -1,7 +1,612 @@
 
 <!DOCTYPE HTML><section id="cat" class="normative">
    <h2>Gegevensdefinitie</h2>
-   <!--MIMCM-Gebouw-1.0-0-20230301-20230228-084810 imvertor 2.0.0--><a class="anchor" id="global_package_Adres"></a><section id="global_package_Adres">
+   <!--MIMCM-Gebouw-1.0-0-20230301-20230228-085137 imvertor 2.0.0--><a class="anchor" id="global_package_Gebouw"></a><section id="global_package_Gebouw">
+      <h3>Domein   Gebouw</h3>
+      <section id="EAID_694B17D2_1DC0_402e_9360_CB847FCF6205">
+         <h4>   UC2 Gebouw - overzicht</h4>
+         <div class="imageinfo overview"><img src="data/Images/EAID_694B17D2_1DC0_402e_9360_CB847FCF6205.png" usemap="#imagemap-EAID_694B17D2_1DC0_402e_9360_CB847FCF6205" alt="Diagram &#xA;                        &#xA;                     "><map name="imagemap-EAID_694B17D2_1DC0_402e_9360_CB847FCF6205"><area shape="rect" alt="Adres" coords="413,120,572,191" href="#graph_EAID_7CB20E53_21F1_4c96_9274_B578A7A354BA"><area shape="rect" alt="Gebouw" coords="48,68,265,244" href="#graph_EAID_E69EBD96_7D7B_4413_8D1A_A0985CB2D192"><area shape="rect" alt="Geometrie" coords="48,259,258,398" href="#graph_EAID_3B9F64B9_0BEB_4573_804F_28E9AD6504B9"></map><p><b>UC2 Gebouw - overzicht</b></p>
+         </div>
+      </section>
+      <section id="">
+         <h4>Objecttypen   </h4>
+         <a class="anchor" id="graph_EAID_E69EBD96_7D7B_4413_8D1A_A0985CB2D192"></a><a class="anchor" id="global_class_Gebouw_Gebouw"></a><section id="global_class_Gebouw_Gebouw">
+            <h5>   Gebouw</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Gebouw</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht attributen  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Attribuutnaam</th>
+                     <th>Definitie</th>
+                     <th>Formaat</th>
+                     <th>Card</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_Gebouw_Gebouw_identificatie">identificatie</a>
+                        </td>
+                     <td></td>
+                     <td>
+                        CHARACTERSTRING
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_Gebouw_Gebouw_bouwjaar">bouwjaar</a>
+                        </td>
+                     <td></td>
+                     <td>
+                        Integer
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_Gebouw_Gebouw_geometrie">geometrie</a>
+                        </td>
+                     <td></td>
+                     <td>
+                        <a class="link" href="#global_class_Gebouw_Geometrie">Geometrie</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_Gebouw_Gebouw_type">type</a>
+                        </td>
+                     <td></td>
+                     <td>
+                        CHARACTERSTRING
+                        </td>
+                     <td>1</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Gebouw
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_Gebouw_Gebouw_gerelateerdAdres">heeft als adres: gerelateerd­Adres</a>
+                        
+                        
+                        <a class="link" href="#global_class_Adres_Adres">Adres</a>
+                        
+                        [ 0 .. * ]
+                        </td>
+                     <td></td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         </section>
+      <section id="">
+         <h4>Gegevensgroeptypen   </h4>
+         <a class="anchor" id="graph_EAID_3B9F64B9_0BEB_4573_804F_28E9AD6504B9"></a><a class="anchor" id="global_class_Gebouw_Geometrie"></a><section id="global_class_Gebouw_Geometrie">
+            <h5>Gegevensgroep   Geometrie</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Geometrie</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht attributen  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Attribuutnaam</th>
+                     <th>Definitie</th>
+                     <th>Formaat</th>
+                     <th>Card</th>
+                  </tr>
+                  <tr>
+                     <td>- 
+                        <a class="link" href="#detail_attribute_Gebouw_Geometrie_bovenaanzicht">bovenaanzicht</a>
+                        </td>
+                     <td></td>
+                     <td>
+                        GM_Surface
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>- 
+                        <a class="link" href="#detail_attribute_Gebouw_Geometrie_maaiveld">maaiveld</a>
+                        </td>
+                     <td></td>
+                     <td>
+                        GM_Multi­Surface
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>- 
+                        <a class="link" href="#detail_attribute_Gebouw_Geometrie_3d">3d</a>
+                        </td>
+                     <td></td>
+                     <td>
+                        GM_Object
+                        </td>
+                     <td>1</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         </section>
+      <section id="">
+         <h4>Attribuut- en relatiesoort details  </h4>
+         
+         <section id="">
+            <h5>Objecttype details  </h5>
+            <a class="anchor" id="detail_class_Gebouw_Gebouw"></a><section id="detail_class_Gebouw_Gebouw">
+               <h6>   Gebouw</h6>
+               <a class="anchor" id="detail_attribute_Gebouw_Gebouw_identificatie"></a><div class="deepheader" id="detail_attribute_Gebouw_Gebouw_identificatie">
+                  <h7>Attribuutsoort details  <a href="#global_class_Gebouw_Gebouw">Gebouw</a> identificatie</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>identificatie</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie formele historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Type</th>
+                           <td>CHARACTERSTRING</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               <a class="anchor" id="detail_attribute_Gebouw_Gebouw_bouwjaar"></a><div class="deepheader" id="detail_attribute_Gebouw_Gebouw_bouwjaar">
+                  <h7>Attribuutsoort details  <a href="#global_class_Gebouw_Gebouw">Gebouw</a> bouwjaar</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>bouwjaar</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Ja</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie formele historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Type</th>
+                           <td>Integer</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="notoc" id="detail_attribute_Gebouw_Gebouw_geometrie">
+                  <h7>Gegevensgroep  <a href="#global_class_Gebouw_Gebouw">Gebouw</a> geometrie</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr></tr>
+                        <tr>
+                           <th>Naam</th>
+                           <td>geometrie</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie formele historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Type</th>
+                           <td>
+                              <a class="link" href="#detail_class_Gebouw_Geometrie">Geometrie</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               <a class="anchor" id="detail_class_Gebouw_Geometrie"></a><div class="deepheader" id="detail_class_Gebouw_Geometrie">
+                  <h7>Gegevensgroeptype   Geometrie</h7>
+                  <a class="anchor" id="detail_attribute_Gebouw_Geometrie_bovenaanzicht"></a><div class="deepheader" id="detail_attribute_Gebouw_Geometrie_bovenaanzicht">
+                     <h8>Attribuutsoort details  <a href="#global_class_Gebouw_Geometrie">Geometrie</a> bovenaanzicht</h8>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Naam</th>
+                              <td>bovenaanzicht</td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst</th>
+                              <td>BAG</td>
+                           </tr>
+                           <tr>
+                              <th>Mogelijk geen waarde</th>
+                              <td>Nee</td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie materiële historie</th>
+                              <td>Nee</td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie formele historie</th>
+                              <td>Nee</td>
+                           </tr>
+                           <tr>
+                              <th>Kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Type</th>
+                              <td>
+                                 GM_Surface
+                                 </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </div>
+                  <a class="anchor" id="detail_attribute_Gebouw_Geometrie_maaiveld"></a><div class="deepheader" id="detail_attribute_Gebouw_Geometrie_maaiveld">
+                     <h8>Attribuutsoort details  <a href="#global_class_Gebouw_Geometrie">Geometrie</a> maaiveld</h8>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Naam</th>
+                              <td>maaiveld</td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst</th>
+                              <td>BGT</td>
+                           </tr>
+                           <tr>
+                              <th>Mogelijk geen waarde</th>
+                              <td>Nee</td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie materiële historie</th>
+                              <td>Nee</td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie formele historie</th>
+                              <td>Nee</td>
+                           </tr>
+                           <tr>
+                              <th>Kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Type</th>
+                              <td>
+                                 GM_Multi­Surface
+                                 </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </div>
+                  <a class="anchor" id="detail_attribute_Gebouw_Geometrie_3d"></a><div class="deepheader" id="detail_attribute_Gebouw_Geometrie_3d">
+                     <h8>Attribuutsoort details  <a href="#global_class_Gebouw_Geometrie">Geometrie</a> 3d</h8>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Naam</th>
+                              <td>3d</td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst</th>
+                              <td>3D basisbestand</td>
+                           </tr>
+                           <tr>
+                              <th>Mogelijk geen waarde</th>
+                              <td>Ja</td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie materiële historie</th>
+                              <td>Nee</td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie formele historie</th>
+                              <td>Nee</td>
+                           </tr>
+                           <tr>
+                              <th>Kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Type</th>
+                              <td>
+                                 GM_Object
+                                 </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </div>
+                  </div>
+               <a class="anchor" id="detail_attribute_Gebouw_Gebouw_type"></a><div class="deepheader" id="detail_attribute_Gebouw_Gebouw_type">
+                  <h7>Attribuutsoort details  <a href="#global_class_Gebouw_Gebouw">Gebouw</a> type</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>type</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Ja</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie formele historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Type</th>
+                           <td>CHARACTERSTRING</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               <a class="anchor" id="detail_association_Gebouw_Gebouw_gerelateerdAdres"></a><div class="deepheader" id="detail_association_Gebouw_Gebouw_gerelateerdAdres">
+                  <h7>Relatiesoort details  <a href="#global_class_Gebouw_Gebouw">Gebouw</a> heeft als adres</h7>
+                  
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>heeft als adres</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>0 .. *</td>
+                        </tr>
+                        <tr>
+                           <th>Gerelateerd objecttype</th>
+                           <td>
+                              <a class="link" href="#global_class_Adres_Adres">Adres</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               </section>
+            </section>
+         
+         <section id="">
+            <h5>Gegevensgroeptype details  </h5>
+            <a class="anchor" id="detail_class_Gebouw_Geometrie"></a><section id="detail_class_Gebouw_Geometrie">
+               <h6>Gegevensgroeptype   Geometrie</h6>
+               <a class="anchor" id="detail_attribute_Gebouw_Geometrie_bovenaanzicht"></a><div class="deepheader" id="detail_attribute_Gebouw_Geometrie_bovenaanzicht">
+                  <h7>Attribuutsoort details  <a href="#global_class_Gebouw_Geometrie">Geometrie</a> bovenaanzicht</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>bovenaanzicht</td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst</th>
+                           <td>BAG</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie formele historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Type</th>
+                           <td>
+                              GM_Surface
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               <a class="anchor" id="detail_attribute_Gebouw_Geometrie_maaiveld"></a><div class="deepheader" id="detail_attribute_Gebouw_Geometrie_maaiveld">
+                  <h7>Attribuutsoort details  <a href="#global_class_Gebouw_Geometrie">Geometrie</a> maaiveld</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>maaiveld</td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst</th>
+                           <td>BGT</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie formele historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Type</th>
+                           <td>
+                              GM_Multi­Surface
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               <a class="anchor" id="detail_attribute_Gebouw_Geometrie_3d"></a><div class="deepheader" id="detail_attribute_Gebouw_Geometrie_3d">
+                  <h7>Attribuutsoort details  <a href="#global_class_Gebouw_Geometrie">Geometrie</a> 3d</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>3d</td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst</th>
+                           <td>3D basisbestand</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Ja</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie formele historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Type</th>
+                           <td>
+                              GM_Object
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               </section>
+            </section>
+         
+         
+         
+         
+         </section>
+   </section><a class="anchor" id="global_package_Adres"></a><section id="global_package_Adres">
       <h3>View   Adres</h3>
       <section id="EAID_430CE858_2B73_4b19_94E6_0C8AE162E02A">
          <h4>   LM Adres - overzicht</h4>
@@ -243,6 +848,20 @@
                   <tr>
                      <td>
                         
+                        <a class="link" href="#global_class_Gebouw_Gebouw">Gebouw</a>
+                        
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_Gebouw_Gebouw_gerelateerdAdres">heeft als adres: gerelateerd­Adres</a>
+                        
+                        Adres
+                        [ 0 .. * ]
+                        </td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>
+                        
                         <a class="link" href="#global_class_Adres_GeorkestreerdGegeven">Georkestreerd­Gegeven</a>
                         
                         [ 1 ]
@@ -265,20 +884,6 @@
                         
                         Adres
                         [ 1 ]
-                        </td>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <td>
-                        
-                        <a class="link" href="#global_class_Gebouw_Gebouw">Gebouw</a>
-                        
-                        [ 1 ]
-                        
-                        <a class="link" href="#detail_association_Gebouw_Gebouw_gerelateerdAdres">heeft als adres: gerelateerd­Adres</a>
-                        
-                        Adres
-                        [ 0 .. * ]
                         </td>
                      <td></td>
                   </tr>
@@ -2838,616 +3443,11 @@
          
          
          </section>
-   </section><a class="anchor" id="global_package_Gebouw"></a><section id="global_package_Gebouw">
-      <h3>Domein   Gebouw</h3>
-      <section id="EAID_694B17D2_1DC0_402e_9360_CB847FCF6205">
-         <h4>   UC2 Gebouw - overzicht</h4>
-         <div class="imageinfo overview"><img src="data/Images/EAID_694B17D2_1DC0_402e_9360_CB847FCF6205.png" usemap="#imagemap-EAID_694B17D2_1DC0_402e_9360_CB847FCF6205" alt="Diagram &#xA;                        &#xA;                     "><map name="imagemap-EAID_694B17D2_1DC0_402e_9360_CB847FCF6205"><area shape="rect" alt="Adres" coords="413,120,572,191" href="#graph_EAID_7CB20E53_21F1_4c96_9274_B578A7A354BA"><area shape="rect" alt="Gebouw" coords="48,68,265,244" href="#graph_EAID_E69EBD96_7D7B_4413_8D1A_A0985CB2D192"><area shape="rect" alt="Geometrie" coords="48,259,258,398" href="#graph_EAID_3B9F64B9_0BEB_4573_804F_28E9AD6504B9"></map><p><b>UC2 Gebouw - overzicht</b></p>
-         </div>
-      </section>
-      <section id="">
-         <h4>Objecttypen   </h4>
-         <a class="anchor" id="graph_EAID_E69EBD96_7D7B_4413_8D1A_A0985CB2D192"></a><a class="anchor" id="global_class_Gebouw_Gebouw"></a><section id="global_class_Gebouw_Gebouw">
-            <h5>   Gebouw</h5>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <td>Gebouw</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            <h6>Overzicht attributen  </h6>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 10%;"></colgroup>
-               <colgroup style="width: 10%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Attribuutnaam</th>
-                     <th>Definitie</th>
-                     <th>Formaat</th>
-                     <th>Card</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_Gebouw_Gebouw_identificatie">identificatie</a>
-                        </td>
-                     <td></td>
-                     <td>
-                        CHARACTERSTRING
-                        </td>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_Gebouw_Gebouw_bouwjaar">bouwjaar</a>
-                        </td>
-                     <td></td>
-                     <td>
-                        Integer
-                        </td>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_Gebouw_Gebouw_geometrie">geometrie</a>
-                        </td>
-                     <td></td>
-                     <td>
-                        <a class="link" href="#global_class_Gebouw_Geometrie">Geometrie</a>
-                        </td>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <a class="link" href="#detail_attribute_Gebouw_Gebouw_type">type</a>
-                        </td>
-                     <td></td>
-                     <td>
-                        CHARACTERSTRING
-                        </td>
-                     <td>1</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            
-            <h6>Overzicht relaties  </h6>
-            
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Rol naam met kardinaliteiten</th>
-                     <th>Definitie</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        Gebouw
-                        [ 1 ]
-                        
-                        <a class="link" href="#detail_association_Gebouw_Gebouw_gerelateerdAdres">heeft als adres: gerelateerd­Adres</a>
-                        
-                        
-                        <a class="link" href="#global_class_Adres_Adres">Adres</a>
-                        
-                        [ 0 .. * ]
-                        </td>
-                     <td></td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            </section>
-         </section>
-      <section id="">
-         <h4>Gegevensgroeptypen   </h4>
-         <a class="anchor" id="graph_EAID_3B9F64B9_0BEB_4573_804F_28E9AD6504B9"></a><a class="anchor" id="global_class_Gebouw_Geometrie"></a><section id="global_class_Gebouw_Geometrie">
-            <h5>Gegevensgroep   Geometrie</h5>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <td>Geometrie</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            <h6>Overzicht attributen  </h6>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 10%;"></colgroup>
-               <colgroup style="width: 10%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Attribuutnaam</th>
-                     <th>Definitie</th>
-                     <th>Formaat</th>
-                     <th>Card</th>
-                  </tr>
-                  <tr>
-                     <td>- 
-                        <a class="link" href="#detail_attribute_Gebouw_Geometrie_bovenaanzicht">bovenaanzicht</a>
-                        </td>
-                     <td></td>
-                     <td>
-                        GM_Surface
-                        </td>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <td>- 
-                        <a class="link" href="#detail_attribute_Gebouw_Geometrie_maaiveld">maaiveld</a>
-                        </td>
-                     <td></td>
-                     <td>
-                        GM_Multi­Surface
-                        </td>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <td>- 
-                        <a class="link" href="#detail_attribute_Gebouw_Geometrie_3d">3d</a>
-                        </td>
-                     <td></td>
-                     <td>
-                        GM_Object
-                        </td>
-                     <td>1</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            </section>
-         </section>
-      <section id="">
-         <h4>Attribuut- en relatiesoort details  </h4>
-         
-         <section id="">
-            <h5>Objecttype details  </h5>
-            <a class="anchor" id="detail_class_Gebouw_Gebouw"></a><section id="detail_class_Gebouw_Gebouw">
-               <h6>   Gebouw</h6>
-               <a class="anchor" id="detail_attribute_Gebouw_Gebouw_identificatie"></a><div class="deepheader" id="detail_attribute_Gebouw_Gebouw_identificatie">
-                  <h7>Attribuutsoort details  <a href="#global_class_Gebouw_Gebouw">Gebouw</a> identificatie</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>identificatie</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie materiële historie</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie formele historie</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Type</th>
-                           <td>CHARACTERSTRING</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               <a class="anchor" id="detail_attribute_Gebouw_Gebouw_bouwjaar"></a><div class="deepheader" id="detail_attribute_Gebouw_Gebouw_bouwjaar">
-                  <h7>Attribuutsoort details  <a href="#global_class_Gebouw_Gebouw">Gebouw</a> bouwjaar</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>bouwjaar</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Ja</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie materiële historie</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie formele historie</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Type</th>
-                           <td>Integer</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div class="notoc" id="detail_attribute_Gebouw_Gebouw_geometrie">
-                  <h7>Gegevensgroep  <a href="#global_class_Gebouw_Gebouw">Gebouw</a> geometrie</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr></tr>
-                        <tr>
-                           <th>Naam</th>
-                           <td>geometrie</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie materiële historie</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie formele historie</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Type</th>
-                           <td>
-                              <a class="link" href="#detail_class_Gebouw_Geometrie">Geometrie</a>
-                              </td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               <a class="anchor" id="detail_class_Gebouw_Geometrie"></a><div class="deepheader" id="detail_class_Gebouw_Geometrie">
-                  <h7>Gegevensgroeptype   Geometrie</h7>
-                  <a class="anchor" id="detail_attribute_Gebouw_Geometrie_bovenaanzicht"></a><div class="deepheader" id="detail_attribute_Gebouw_Geometrie_bovenaanzicht">
-                     <h8>Attribuutsoort details  <a href="#global_class_Gebouw_Geometrie">Geometrie</a> bovenaanzicht</h8>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Naam</th>
-                              <td>bovenaanzicht</td>
-                           </tr>
-                           <tr>
-                              <th>Herkomst</th>
-                              <td>BAG</td>
-                           </tr>
-                           <tr>
-                              <th>Mogelijk geen waarde</th>
-                              <td>Nee</td>
-                           </tr>
-                           <tr>
-                              <th>Indicatie materiële historie</th>
-                              <td>Nee</td>
-                           </tr>
-                           <tr>
-                              <th>Indicatie formele historie</th>
-                              <td>Nee</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>1</td>
-                           </tr>
-                           <tr>
-                              <th>Type</th>
-                              <td>
-                                 GM_Surface
-                                 </td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </div>
-                  <a class="anchor" id="detail_attribute_Gebouw_Geometrie_maaiveld"></a><div class="deepheader" id="detail_attribute_Gebouw_Geometrie_maaiveld">
-                     <h8>Attribuutsoort details  <a href="#global_class_Gebouw_Geometrie">Geometrie</a> maaiveld</h8>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Naam</th>
-                              <td>maaiveld</td>
-                           </tr>
-                           <tr>
-                              <th>Herkomst</th>
-                              <td>BGT</td>
-                           </tr>
-                           <tr>
-                              <th>Mogelijk geen waarde</th>
-                              <td>Nee</td>
-                           </tr>
-                           <tr>
-                              <th>Indicatie materiële historie</th>
-                              <td>Nee</td>
-                           </tr>
-                           <tr>
-                              <th>Indicatie formele historie</th>
-                              <td>Nee</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>1</td>
-                           </tr>
-                           <tr>
-                              <th>Type</th>
-                              <td>
-                                 GM_Multi­Surface
-                                 </td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </div>
-                  <a class="anchor" id="detail_attribute_Gebouw_Geometrie_3d"></a><div class="deepheader" id="detail_attribute_Gebouw_Geometrie_3d">
-                     <h8>Attribuutsoort details  <a href="#global_class_Gebouw_Geometrie">Geometrie</a> 3d</h8>
-                     
-                     <table style="width: 100%;">
-                        <colgroup style="width: 30%;"></colgroup>
-                        <colgroup style="width: 70%;"></colgroup>
-                        <tbody>
-                           <tr>
-                              <th>Naam</th>
-                              <td>3d</td>
-                           </tr>
-                           <tr>
-                              <th>Herkomst</th>
-                              <td>3D basisbestand</td>
-                           </tr>
-                           <tr>
-                              <th>Mogelijk geen waarde</th>
-                              <td>Ja</td>
-                           </tr>
-                           <tr>
-                              <th>Indicatie materiële historie</th>
-                              <td>Nee</td>
-                           </tr>
-                           <tr>
-                              <th>Indicatie formele historie</th>
-                              <td>Nee</td>
-                           </tr>
-                           <tr>
-                              <th>Kardinaliteit</th>
-                              <td>1</td>
-                           </tr>
-                           <tr>
-                              <th>Type</th>
-                              <td>
-                                 GM_Object
-                                 </td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </div>
-                  </div>
-               <a class="anchor" id="detail_attribute_Gebouw_Gebouw_type"></a><div class="deepheader" id="detail_attribute_Gebouw_Gebouw_type">
-                  <h7>Attribuutsoort details  <a href="#global_class_Gebouw_Gebouw">Gebouw</a> type</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>type</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Ja</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie materiële historie</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie formele historie</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Type</th>
-                           <td>CHARACTERSTRING</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               <a class="anchor" id="detail_association_Gebouw_Gebouw_gerelateerdAdres"></a><div class="deepheader" id="detail_association_Gebouw_Gebouw_gerelateerdAdres">
-                  <h7>Relatiesoort details  <a href="#global_class_Gebouw_Gebouw">Gebouw</a> heeft als adres</h7>
-                  
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>heeft als adres</td>
-                        </tr>
-                        <tr>
-                           <th>Kardinaliteit</th>
-                           <td>0 .. *</td>
-                        </tr>
-                        <tr>
-                           <th>Gerelateerd objecttype</th>
-                           <td>
-                              <a class="link" href="#global_class_Adres_Adres">Adres</a>
-                              </td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               </section>
-            </section>
-         
-         <section id="">
-            <h5>Gegevensgroeptype details  </h5>
-            <a class="anchor" id="detail_class_Gebouw_Geometrie"></a><section id="detail_class_Gebouw_Geometrie">
-               <h6>Gegevensgroeptype   Geometrie</h6>
-               <a class="anchor" id="detail_attribute_Gebouw_Geometrie_bovenaanzicht"></a><div class="deepheader" id="detail_attribute_Gebouw_Geometrie_bovenaanzicht">
-                  <h7>Attribuutsoort details  <a href="#global_class_Gebouw_Geometrie">Geometrie</a> bovenaanzicht</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>bovenaanzicht</td>
-                        </tr>
-                        <tr>
-                           <th>Herkomst</th>
-                           <td>BAG</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie materiële historie</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie formele historie</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Type</th>
-                           <td>
-                              GM_Surface
-                              </td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               <a class="anchor" id="detail_attribute_Gebouw_Geometrie_maaiveld"></a><div class="deepheader" id="detail_attribute_Gebouw_Geometrie_maaiveld">
-                  <h7>Attribuutsoort details  <a href="#global_class_Gebouw_Geometrie">Geometrie</a> maaiveld</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>maaiveld</td>
-                        </tr>
-                        <tr>
-                           <th>Herkomst</th>
-                           <td>BGT</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie materiële historie</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie formele historie</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Type</th>
-                           <td>
-                              GM_Multi­Surface
-                              </td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               <a class="anchor" id="detail_attribute_Gebouw_Geometrie_3d"></a><div class="deepheader" id="detail_attribute_Gebouw_Geometrie_3d">
-                  <h7>Attribuutsoort details  <a href="#global_class_Gebouw_Geometrie">Geometrie</a> 3d</h7>
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>3d</td>
-                        </tr>
-                        <tr>
-                           <th>Herkomst</th>
-                           <td>3D basisbestand</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Ja</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie materiële historie</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie formele historie</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Kardinaliteit</th>
-                           <td>1</td>
-                        </tr>
-                        <tr>
-                           <th>Type</th>
-                           <td>
-                              GM_Object
-                              </td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               </section>
-            </section>
-         
-         
-         
-         
-         </section>
    </section>
 </section>
 <section id="lis" class="normative">
    <h2>Inhoud van waardenlijsten</h2>
-   <!--MIMCM-Gebouw-1.0-0-20230301-20230228-084810 imvertor 2.0.0-->
+   <!--MIMCM-Gebouw-1.0-0-20230301-20230228-085137 imvertor 2.0.0-->
    <section id="">
       <h3>Enumeratie inhoud   </h3><a class="anchor" id="graph_EAID_B3F6E75D_2150_436f_AE40_41C5A457CA43"></a><a class="anchor" id="detail_class_Adres_Registratie"></a><section id="detail_class_Adres_Registratie">
          <h4>Enumeratie details  Registratie</h4>
