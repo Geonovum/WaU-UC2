@@ -1,16 +1,21 @@
 
 <!DOCTYPE HTML><section id="cat" class="normative">
    <h2>Gegevensdefinitie</h2>
-   <!--MIMCM-Gebouw-1.0-0-20230301-20230228-085137 imvertor 2.0.0--><a class="anchor" id="global_package_Gebouw"></a><section id="global_package_Gebouw">
+   <!--MIMCM-Gebouw-logisch-1.0-0-20230301-20230228-100827 imvertor 2.0.0--><a class="anchor" id="global_package_Gebouw"></a><section id="global_package_Gebouw">
       <h3>Domein   Gebouw</h3>
+      <section id="EAID_5F7C3E6C_C360_4bbb_9B6D_68AB32915932">
+         <h4>   LM Gebouw  - overzicht</h4>
+         <div class="imageinfo overview"><img src="data/Images/EAID_5F7C3E6C_C360_4bbb_9B6D_68AB32915932.png" usemap="#imagemap-EAID_5F7C3E6C_C360_4bbb_9B6D_68AB32915932" alt="Diagram &#xA;                        &#xA;                     "><map name="imagemap-EAID_5F7C3E6C_C360_4bbb_9B6D_68AB32915932"><area shape="rect" alt="Registratiegegevens" coords="321,68,444,164" href="#graph_EAID_7DEC5472_21EE_4ba3_9C92_9C1D01D3450F"><area shape="rect" alt="Adres" coords="647,360,936,641" href="#graph_EAID_878292C3_0E77_424a_B7CB_CEDC5517C209"><area shape="rect" alt="Gebouw" coords="48,360,344,576" href="#graph_EAID_88368E67_5068_4623_82B0_CFBA23798D84"><area shape="rect" alt="Geometrie" coords="48,581,258,721" href="#graph_EAID_CF6E8AA9_74EA_492f_9240_8FA447C9D629"></map><p><b>LM Gebouw  - overzicht</b></p>
+         </div>
+      </section>
       <section id="EAID_694B17D2_1DC0_402e_9360_CB847FCF6205">
-         <h4>   UC2 Gebouw - overzicht</h4>
-         <div class="imageinfo overview"><img src="data/Images/EAID_694B17D2_1DC0_402e_9360_CB847FCF6205.png" usemap="#imagemap-EAID_694B17D2_1DC0_402e_9360_CB847FCF6205" alt="Diagram &#xA;                        &#xA;                     "><map name="imagemap-EAID_694B17D2_1DC0_402e_9360_CB847FCF6205"><area shape="rect" alt="Adres" coords="413,120,572,191" href="#graph_EAID_7CB20E53_21F1_4c96_9274_B578A7A354BA"><area shape="rect" alt="Gebouw" coords="48,68,265,244" href="#graph_EAID_E69EBD96_7D7B_4413_8D1A_A0985CB2D192"><area shape="rect" alt="Geometrie" coords="48,259,258,398" href="#graph_EAID_3B9F64B9_0BEB_4573_804F_28E9AD6504B9"></map><p><b>UC2 Gebouw - overzicht</b></p>
+         <h4>   CM Gebouw - overzicht</h4>
+         <div class="imageinfo overview"><img src="data/Images/EAID_694B17D2_1DC0_402e_9360_CB847FCF6205.png" usemap="#imagemap-EAID_694B17D2_1DC0_402e_9360_CB847FCF6205" alt="Diagram &#xA;                        &#xA;                     "><map name="imagemap-EAID_694B17D2_1DC0_402e_9360_CB847FCF6205"></map><p><b>CM Gebouw - overzicht</b></p>
          </div>
       </section>
       <section id="">
          <h4>Objecttypen   </h4>
-         <a class="anchor" id="graph_EAID_E69EBD96_7D7B_4413_8D1A_A0985CB2D192"></a><a class="anchor" id="global_class_Gebouw_Gebouw"></a><section id="global_class_Gebouw_Gebouw">
+         <a class="anchor" id="graph_EAID_88368E67_5068_4623_82B0_CFBA23798D84"></a><a class="anchor" id="global_class_Gebouw_Gebouw"></a><section id="global_class_Gebouw_Gebouw">
             <h5>   Gebouw</h5>
             
             <table style="width: 100%;">
@@ -50,6 +55,19 @@
                   </tr>
                   <tr>
                      <td>
+                        <a class="link" href="#detail_attribute_Gebouw_Gebouw_domein">domein</a>
+                        </td>
+                     <td>
+                        
+                        <p>Het domein waar het object aan toe behoort.</p>
+                        </td>
+                     <td>
+                        CHARACTERSTRING
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
                         <a class="link" href="#detail_attribute_Gebouw_Gebouw_bouwjaar">bouwjaar</a>
                         </td>
                      <td></td>
@@ -60,11 +78,11 @@
                   </tr>
                   <tr>
                      <td>
-                        <a class="link" href="#detail_attribute_Gebouw_Gebouw_geometrie">geometrie</a>
+                        <a class="link" href="#detail_attribute_Gebouw_Gebouw_sloopjaar">sloopjaar</a>
                         </td>
                      <td></td>
                      <td>
-                        <a class="link" href="#global_class_Gebouw_Geometrie">Geometrie</a>
+                        Integer
                         </td>
                      <td>1</td>
                   </tr>
@@ -75,6 +93,16 @@
                      <td></td>
                      <td>
                         CHARACTERSTRING
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_Gebouw_Gebouw_geometrie">geometrie</a>
+                        </td>
+                     <td></td>
+                     <td>
+                        <a class="link" href="#global_class_Gebouw_Geometrie">Geometrie</a>
                         </td>
                      <td>1</td>
                   </tr>
@@ -98,12 +126,29 @@
                         Gebouw
                         [ 1 ]
                         
-                        <a class="link" href="#detail_association_Gebouw_Gebouw_gerelateerdAdres">heeft als adres: gerelateerd­Adres</a>
+                        <a class="link" href="#detail_association_Gebouw_Gebouw_adres">heeft­Als­Adres: adres</a>
                         
                         
                         <a class="link" href="#global_class_Adres_Adres">Adres</a>
                         
-                        [ 0 .. * ]
+                        [ 0 .. 1 ]
+                        </td>
+                     <td>
+                        
+                        <p>Gerelateerd adres, dat een Gebouw heeft.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Gebouw
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_Gebouw_Gebouw_registratiegegevens">is­Geregistreerd­Met: registratiegegevens</a>
+                        
+                        
+                        <a class="link" href="#global_class_Registratiegegevens_Registratiegegevens">Registratiegegevens</a>
+                        
+                        [ 1 ]
                         </td>
                      <td></td>
                   </tr>
@@ -114,7 +159,7 @@
          </section>
       <section id="">
          <h4>Gegevensgroeptypen   </h4>
-         <a class="anchor" id="graph_EAID_3B9F64B9_0BEB_4573_804F_28E9AD6504B9"></a><a class="anchor" id="global_class_Gebouw_Geometrie"></a><section id="global_class_Gebouw_Geometrie">
+         <a class="anchor" id="graph_EAID_CF6E8AA9_74EA_492f_9240_8FA447C9D629"></a><a class="anchor" id="global_class_Gebouw_Geometrie"></a><section id="global_class_Gebouw_Geometrie">
             <h5>Gegevensgroep   Geometrie</h5>
             
             <table style="width: 100%;">
@@ -218,6 +263,64 @@
                      </tbody>
                   </table>
                   </div>
+               <a class="anchor" id="detail_attribute_Gebouw_Gebouw_domein"></a><div class="deepheader" id="detail_attribute_Gebouw_Gebouw_domein">
+                  <h7>Attribuutsoort details  <a href="#global_class_Gebouw_Gebouw">Gebouw</a> domein</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>domein</td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst</th>
+                           <td>BAG</td>
+                        </tr>
+                        <tr>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              <p>Het domein waar het object aan toe behoort.</p>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Herkomst definitie</th>
+                           <td>Grondslagen Basis Registratie Adressen versie 2.0 </td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>Elke nummeraanduiding waarvan gegevens zijn opgenomen in de basisregistratie adressen
+                              en gebouwen, wordt uniek aangeduid door middel van een identificatiecode.</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie formele historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie authentiek</th>
+                           <td>Authentiek</td>
+                        </tr>
+                        <tr>
+                           <th>Type</th>
+                           <td>CHARACTERSTRING</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
                <a class="anchor" id="detail_attribute_Gebouw_Gebouw_bouwjaar"></a><div class="deepheader" id="detail_attribute_Gebouw_Gebouw_bouwjaar">
                   <h7>Attribuutsoort details  <a href="#global_class_Gebouw_Gebouw">Gebouw</a> bouwjaar</h7>
                   
@@ -228,6 +331,40 @@
                         <tr>
                            <th>Naam</th>
                            <td>bouwjaar</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie formele historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Type</th>
+                           <td>Integer</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               <a class="anchor" id="detail_attribute_Gebouw_Gebouw_sloopjaar"></a><div class="deepheader" id="detail_attribute_Gebouw_Gebouw_sloopjaar">
+                  <h7>Attribuutsoort details  <a href="#global_class_Gebouw_Gebouw">Gebouw</a> sloopjaar</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>sloopjaar</td>
                         </tr>
                         <tr>
                            <th>Mogelijk geen waarde</th>
@@ -248,6 +385,40 @@
                         <tr>
                            <th>Type</th>
                            <td>Integer</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               <a class="anchor" id="detail_attribute_Gebouw_Gebouw_type"></a><div class="deepheader" id="detail_attribute_Gebouw_Gebouw_type">
+                  <h7>Attribuutsoort details  <a href="#global_class_Gebouw_Gebouw">Gebouw</a> type</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>type</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Ja</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie formele historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Type</th>
+                           <td>CHARACTERSTRING</td>
                         </tr>
                      </tbody>
                   </table>
@@ -413,8 +584,9 @@
                      </table>
                      </div>
                   </div>
-               <a class="anchor" id="detail_attribute_Gebouw_Gebouw_type"></a><div class="deepheader" id="detail_attribute_Gebouw_Gebouw_type">
-                  <h7>Attribuutsoort details  <a href="#global_class_Gebouw_Gebouw">Gebouw</a> type</h7>
+               <a class="anchor" id="detail_association_Gebouw_Gebouw_adres"></a><div class="deepheader" id="detail_association_Gebouw_Gebouw_adres">
+                  <h7>Relatiesoort details  <a href="#global_class_Gebouw_Gebouw">Gebouw</a> heeft­Als­Adres</h7>
+                  
                   
                   <table style="width: 100%;">
                      <colgroup style="width: 30%;"></colgroup>
@@ -422,51 +594,48 @@
                      <tbody>
                         <tr>
                            <th>Naam</th>
-                           <td>type</td>
+                           <td>heeft­Als­Adres</td>
                         </tr>
                         <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Ja</td>
+                           <th>Definitie</th>
+                           <td>
+                              
+                              <p>Gerelateerd adres, dat een Gebouw heeft.</p>
+                              </td>
                         </tr>
                         <tr>
-                           <th>Indicatie materiële historie</th>
-                           <td>Nee</td>
+                           <th>Kardinaliteit</th>
+                           <td>0 .. 1</td>
                         </tr>
                         <tr>
-                           <th>Indicatie formele historie</th>
-                           <td>Nee</td>
+                           <th>Gerelateerd objecttype</th>
+                           <td>
+                              <a class="link" href="#global_class_Adres_Adres">Adres</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               <a class="anchor" id="detail_association_Gebouw_Gebouw_registratiegegevens"></a><div class="deepheader" id="detail_association_Gebouw_Gebouw_registratiegegevens">
+                  <h7>Relatiesoort details  <a href="#global_class_Gebouw_Gebouw">Gebouw</a> is­Geregistreerd­Met</h7>
+                  
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>is­Geregistreerd­Met</td>
                         </tr>
                         <tr>
                            <th>Kardinaliteit</th>
                            <td>1</td>
                         </tr>
                         <tr>
-                           <th>Type</th>
-                           <td>CHARACTERSTRING</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               <a class="anchor" id="detail_association_Gebouw_Gebouw_gerelateerdAdres"></a><div class="deepheader" id="detail_association_Gebouw_Gebouw_gerelateerdAdres">
-                  <h7>Relatiesoort details  <a href="#global_class_Gebouw_Gebouw">Gebouw</a> heeft als adres</h7>
-                  
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>heeft als adres</td>
-                        </tr>
-                        <tr>
-                           <th>Kardinaliteit</th>
-                           <td>0 .. *</td>
-                        </tr>
-                        <tr>
                            <th>Gerelateerd objecttype</th>
                            <td>
-                              <a class="link" href="#global_class_Adres_Adres">Adres</a>
+                              <a class="link" href="#global_class_Registratiegegevens_Registratiegegevens">Registratiegegevens</a>
                               </td>
                         </tr>
                      </tbody>
@@ -607,35 +776,35 @@
          
          </section>
    </section><a class="anchor" id="global_package_Adres"></a><section id="global_package_Adres">
-      <h3>View   Adres</h3>
-      <section id="EAID_430CE858_2B73_4b19_94E6_0C8AE162E02A">
+      <h3>Domein   Adres</h3>
+      <section id="EAID_3F70EC2F_A605_4b06_AAFB_C0A1CFD4163E">
          <h4>   LM Adres - overzicht</h4>
-         <div class="imageinfo overview"><img src="data/Images/EAID_430CE858_2B73_4b19_94E6_0C8AE162E02A.png" usemap="#imagemap-EAID_430CE858_2B73_4b19_94E6_0C8AE162E02A" alt="Diagram &#xA;                        &#xA;                     "><map name="imagemap-EAID_430CE858_2B73_4b19_94E6_0C8AE162E02A"><area shape="rect" alt="Registratiegegevens" coords="78,389,233,484" href="#graph_EAID_D5B686AC_C8DB_4beb_A9F2_64748CA22F53"><area shape="rect" alt="BronComplexGegeven" coords="1395,1205,1592,1317" href="#graph_EAID_3564EFD2_FBE1_4a1a_9352_5D032D01B633"><area shape="rect" alt="GeorkestreerdComplexGegeven" coords="755,1280,1048,1392" href="#graph_EAID_BAF62FB7_C205_47fe_A97D_5DCC9B0383FA"><area shape="rect" alt="GeorkestreerdRelatieGegeven" coords="761,1426,1043,1538" href="#graph_EAID_E5E5E478_893B_4551_A785_802A0B76A19A"><area shape="rect" alt="Bronregistratie" coords="1174,68,1306,180" href="#graph_EAID_48A6619D_3B7D_415e_9FA0_2BF5D0FD977C"><area shape="rect" alt="BronRelatieGegeven" coords="1388,1060,1591,1172" href="#graph_EAID_7EC0BD12_CC6D_4985_9775_A9444425C558"><area shape="rect" alt="BronIntegerGegeven" coords="1384,867,1587,978" href="#graph_EAID_F76A4561_3BB5_4a7e_A5FE_6CFDFB2263CE"><area shape="rect" alt="BronCharacterStringGegeven" coords="1384,685,1666,797" href="#graph_EAID_20AB81B7_2590_46f1_8C2A_BC70ED995C7E"><area shape="rect" alt="GeorkestreerdBooleanGegeven" coords="750,1097,1052,1209" href="#graph_EAID_02111E28_01C4_4d78_BFAA_F90B177BBCDD"><area shape="rect" alt="GeorkestreerdIntegerGegeven" coords="755,922,1047,1034" href="#graph_EAID_510A2E5E_519F_4c4a_8414_BA6B5888BCF4"><area shape="rect" alt="GeorkesteerdCharacterStringGegeven" coords="755,704,1118,816" href="#graph_EAID_F142B7A3_7226_4274_89DB_4BC9924443BB"><area shape="rect" alt="Bronobject" coords="1661,389,1966,501" href="#graph_EAID_44DF73BB_8097_4764_A7C6_560681686575"><area shape="rect" alt="Brongegeven" coords="1109,389,1384,501" href="#graph_EAID_6F285CEC_722C_4f48_A5F4_3387E64E7F20"><area shape="rect" alt="GeorkestreerdGegeven" coords="456,389,858,501" href="#graph_EAID_E66F3BA0_C5A5_4ffc_A5B5_40FA9D159664"><area shape="rect" alt="Adres" coords="48,846,262,922" href="#graph_EAID_7CB20E53_21F1_4c96_9274_B578A7A354BA"></map><p><b>LM Adres - overzicht</b></p>
+         <div class="imageinfo overview"><img src="data/Images/EAID_3F70EC2F_A605_4b06_AAFB_C0A1CFD4163E.png" usemap="#imagemap-EAID_3F70EC2F_A605_4b06_AAFB_C0A1CFD4163E" alt="Diagram &#xA;                        &#xA;                     "><map name="imagemap-EAID_3F70EC2F_A605_4b06_AAFB_C0A1CFD4163E"><area shape="rect" alt="Registratiegegevens" coords="78,389,233,484" href="#graph_EAID_7DEC5472_21EE_4ba3_9C92_9C1D01D3450F"><area shape="rect" alt="BronComplexGegeven" coords="1395,1205,1592,1317" href="#graph_EAID_15378C59_C1A0_41d1_BF5E_870166399058"><area shape="rect" alt="GeorkestreerdComplexGegeven" coords="755,1280,1048,1392" href="#graph_EAID_29177C19_3F88_4253_A3E7_9B1E87676A5A"><area shape="rect" alt="GeorkestreerdRelatieGegeven" coords="761,1426,1043,1538" href="#graph_EAID_5221DBD0_7FFF_4a49_9F50_CD781D647642"><area shape="rect" alt="Bronregistratie" coords="1174,68,1306,180" href="#graph_EAID_91824BE2_744A_493a_B278_52A94A295205"><area shape="rect" alt="BronRelatieGegeven" coords="1388,1060,1591,1172" href="#graph_EAID_C2F545EF_5878_4fc8_AEE9_014F22468018"><area shape="rect" alt="BronIntegerGegeven" coords="1384,867,1587,978" href="#graph_EAID_A4196975_6D0A_4ecb_9B70_8C7AB7713AC2"><area shape="rect" alt="BronCharacterStringGegeven" coords="1384,685,1666,797" href="#graph_EAID_5943745A_DB99_4c29_B52A_69B32B9C590B"><area shape="rect" alt="GeorkestreerdBooleanGegeven" coords="750,1097,1052,1209" href="#graph_EAID_DB7E6D62_4FE3_4d3a_875F_B3C751D080D5"><area shape="rect" alt="GeorkestreerdIntegerGegeven" coords="755,922,1047,1034" href="#graph_EAID_B520BF1A_0FB9_439f_A157_543DEBB14D13"><area shape="rect" alt="GeorkesteerdCharacterStringGegeven" coords="755,704,1118,816" href="#graph_EAID_A9BA6345_A665_4088_9686_9CE33CDC07C4"><area shape="rect" alt="Bronobject" coords="1661,389,1966,501" href="#graph_EAID_BC4B20FB_EC3C_47f2_8B52_C348132ABFE3"><area shape="rect" alt="Brongegeven" coords="1109,389,1384,501" href="#graph_EAID_0E79B496_DB38_44e8_BC89_B98A0DF57E54"><area shape="rect" alt="GeorkestreerdGegeven" coords="456,389,858,501" href="#graph_EAID_D491B23F_26CD_4439_9484_E4C7C6FCCC9A"><area shape="rect" alt="Adres" coords="48,846,262,922" href="#graph_EAID_878292C3_0E77_424a_B7CB_CEDC5517C209"></map><p><b>LM Adres - overzicht</b></p>
          </div>
       </section>
-      <section id="EAID_5A1C41BC_2EA3_46d6_8509_DC9209E43CE8">
+      <section id="EAID_7CD10C63_B0D6_4c1d_ACCE_DC6BCE798C9A">
          <h4>   CM Adres - overzicht</h4>
-         <div class="imageinfo overview"><img src="data/Images/EAID_5A1C41BC_2EA3_46d6_8509_DC9209E43CE8.png" usemap="#imagemap-EAID_5A1C41BC_2EA3_46d6_8509_DC9209E43CE8" alt="Diagram &#xA;                        &#xA;                     "><map name="imagemap-EAID_5A1C41BC_2EA3_46d6_8509_DC9209E43CE8"></map><p><b>CM Adres - overzicht</b></p>
+         <div class="imageinfo overview"><img src="data/Images/EAID_7CD10C63_B0D6_4c1d_ACCE_DC6BCE798C9A.png" usemap="#imagemap-EAID_7CD10C63_B0D6_4c1d_ACCE_DC6BCE798C9A" alt="Diagram &#xA;                        &#xA;                     "><map name="imagemap-EAID_7CD10C63_B0D6_4c1d_ACCE_DC6BCE798C9A"></map><p><b>CM Adres - overzicht</b></p>
          </div>
       </section>
-      <section id="EAID_382A4E62_84FC_4b1a_80C0_33FA7ADAD760">
+      <section id="EAID_0C11615D_356A_4288_8445_FB544A1E822F">
          <h4>   LM Adres - detail</h4>
-         <div class="imageinfo "><img src="data/Images/EAID_382A4E62_84FC_4b1a_80C0_33FA7ADAD760.png" usemap="#imagemap-EAID_382A4E62_84FC_4b1a_80C0_33FA7ADAD760" alt="Diagram &#xA;                        &#xA;                     "><map name="imagemap-EAID_382A4E62_84FC_4b1a_80C0_33FA7ADAD760"><area shape="rect" alt="Registratiegegevens" coords="141,439,329,534" href="#graph_EAID_D5B686AC_C8DB_4beb_A9F2_64748CA22F53"><area shape="rect" alt="BronComplexGegeven" coords="1637,1187,1835,1283" href="#graph_EAID_3564EFD2_FBE1_4a1a_9352_5D032D01B633"><area shape="rect" alt="GeorkestreerdComplexGegeven" coords="1000,1216,1294,1311" href="#graph_EAID_BAF62FB7_C205_47fe_A97D_5DCC9B0383FA"><area shape="rect" alt="GeorkestreerdRelatieGegeven" coords="1007,1362,1288,1457" href="#graph_EAID_E5E5E478_893B_4551_A785_802A0B76A19A"><area shape="rect" alt="Bronregistratie" coords="1422,68,1554,190" href="#graph_EAID_48A6619D_3B7D_415e_9FA0_2BF5D0FD977C"><area shape="rect" alt="BronRelatieGegeven" coords="1637,1036,1835,1131" href="#graph_EAID_7EC0BD12_CC6D_4985_9775_A9444425C558"><area shape="rect" alt="BronIntegerGegeven" coords="1631,847,1829,951" href="#graph_EAID_F76A4561_3BB5_4a7e_A5FE_6CFDFB2263CE"><area shape="rect" alt="BronCharacterStringGegeven" coords="1632,685,1830,789" href="#graph_EAID_20AB81B7_2590_46f1_8C2A_BC70ED995C7E"><area shape="rect" alt="GeorkestreerdBooleanGegeven" coords="1000,1032,1302,1135" href="#graph_EAID_02111E28_01C4_4d78_BFAA_F90B177BBCDD"><area shape="rect" alt="GeorkestreerdIntegerGegeven" coords="1000,858,1292,962" href="#graph_EAID_510A2E5E_519F_4c4a_8414_BA6B5888BCF4"><area shape="rect" alt="GeorkesteerdCharacterStringGegeven" coords="1003,704,1366,808" href="#graph_EAID_F142B7A3_7226_4274_89DB_4BC9924443BB"><area shape="rect" alt="Bronobject" coords="1909,389,2215,551" href="#graph_EAID_44DF73BB_8097_4764_A7C6_560681686575"><area shape="rect" alt="Registratie" coords="1684,68,1827,205" href="#graph_EAID_B3F6E75D_2150_436f_AE40_41C5A457CA43"><area shape="rect" alt="Brongegeven" coords="1358,389,1632,550" href="#graph_EAID_6F285CEC_722C_4f48_A5F4_3387E64E7F20"><area shape="rect" alt="GeorkestreerdGegeven" coords="697,382,1098,559" href="#graph_EAID_E66F3BA0_C5A5_4ffc_A5B5_40FA9D159664"><area shape="rect" alt="Adres" coords="48,772,404,1059" href="#graph_EAID_7CB20E53_21F1_4c96_9274_B578A7A354BA"></map><p><b>LM Adres - detail</b></p>
+         <div class="imageinfo "><img src="data/Images/EAID_0C11615D_356A_4288_8445_FB544A1E822F.png" usemap="#imagemap-EAID_0C11615D_356A_4288_8445_FB544A1E822F" alt="Diagram &#xA;                        &#xA;                     "><map name="imagemap-EAID_0C11615D_356A_4288_8445_FB544A1E822F"><area shape="rect" alt="Registratiegegevens" coords="141,439,329,534" href="#graph_EAID_7DEC5472_21EE_4ba3_9C92_9C1D01D3450F"><area shape="rect" alt="BronComplexGegeven" coords="1637,1187,1835,1283" href="#graph_EAID_15378C59_C1A0_41d1_BF5E_870166399058"><area shape="rect" alt="GeorkestreerdComplexGegeven" coords="1000,1216,1294,1311" href="#graph_EAID_29177C19_3F88_4253_A3E7_9B1E87676A5A"><area shape="rect" alt="GeorkestreerdRelatieGegeven" coords="1007,1362,1288,1457" href="#graph_EAID_5221DBD0_7FFF_4a49_9F50_CD781D647642"><area shape="rect" alt="Bronregistratie" coords="1422,68,1554,190" href="#graph_EAID_91824BE2_744A_493a_B278_52A94A295205"><area shape="rect" alt="BronRelatieGegeven" coords="1637,1036,1835,1131" href="#graph_EAID_C2F545EF_5878_4fc8_AEE9_014F22468018"><area shape="rect" alt="BronIntegerGegeven" coords="1631,847,1829,951" href="#graph_EAID_A4196975_6D0A_4ecb_9B70_8C7AB7713AC2"><area shape="rect" alt="BronCharacterStringGegeven" coords="1632,685,1830,789" href="#graph_EAID_5943745A_DB99_4c29_B52A_69B32B9C590B"><area shape="rect" alt="GeorkestreerdBooleanGegeven" coords="1000,1032,1302,1135" href="#graph_EAID_DB7E6D62_4FE3_4d3a_875F_B3C751D080D5"><area shape="rect" alt="GeorkestreerdIntegerGegeven" coords="1000,858,1292,962" href="#graph_EAID_B520BF1A_0FB9_439f_A157_543DEBB14D13"><area shape="rect" alt="GeorkesteerdCharacterStringGegeven" coords="1003,704,1366,808" href="#graph_EAID_A9BA6345_A665_4088_9686_9CE33CDC07C4"><area shape="rect" alt="Bronobject" coords="1909,389,2215,551" href="#graph_EAID_BC4B20FB_EC3C_47f2_8B52_C348132ABFE3"><area shape="rect" alt="Registratie" coords="1684,68,1827,205" href="#graph_EAID_6663A0EB_7675_49cd_8E20_3AC555D14E8C"><area shape="rect" alt="Brongegeven" coords="1358,389,1632,550" href="#graph_EAID_0E79B496_DB38_44e8_BC89_B98A0DF57E54"><area shape="rect" alt="GeorkestreerdGegeven" coords="697,382,1098,559" href="#graph_EAID_D491B23F_26CD_4439_9484_E4C7C6FCCC9A"><area shape="rect" alt="Adres" coords="48,772,404,1059" href="#graph_EAID_878292C3_0E77_424a_B7CB_CEDC5517C209"></map><p><b>LM Adres - detail</b></p>
          </div>
       </section>
-      <section id="EAID_DCFA6C0A_262D_4508_8725_891039AAF264">
+      <section id="EAID_C6C1AEC6_52FE_4bff_9671_36485B514545">
          <h4>   Registratiegegeven - detail</h4>
-         <div class="imageinfo "><img src="data/Images/EAID_DCFA6C0A_262D_4508_8725_891039AAF264.png" usemap="#imagemap-EAID_DCFA6C0A_262D_4508_8725_891039AAF264" alt="Diagram &#xA;                        &#xA;                     "><map name="imagemap-EAID_DCFA6C0A_262D_4508_8725_891039AAF264"></map><p><b>Registratiegegeven - detail</b></p>
+         <div class="imageinfo "><img src="data/Images/EAID_C6C1AEC6_52FE_4bff_9671_36485B514545.png" usemap="#imagemap-EAID_C6C1AEC6_52FE_4bff_9671_36485B514545" alt="Diagram &#xA;                        &#xA;                     "><map name="imagemap-EAID_C6C1AEC6_52FE_4bff_9671_36485B514545"></map><p><b>Registratiegegeven - detail</b></p>
          </div>
       </section>
       <section id="">
          <h4>Objecttypen   </h4>
-         <a class="anchor" id="graph_EAID_7CB20E53_21F1_4c96_9274_B578A7A354BA"></a><a class="anchor" id="global_class_Adres_Adres"></a><section id="global_class_Adres_Adres">
+         <a class="anchor" id="graph_EAID_878292C3_0E77_424a_B7CB_CEDC5517C209"></a><a class="anchor" id="global_class_Adres_Adres"></a><section id="global_class_Adres_Adres">
             <h5>   Adres</h5>
             
-            <section id="EAID_53BF1B47_98ED_4fd5_958F_5C2919BDFABB">
+            <section id="EAID_D9868D99_5709_40c7_B8D1_E6C6E5663F79">
                <h6>   Adres - detail</h6>
-               <div class="imageinfo "><img src="data/Images/EAID_53BF1B47_98ED_4fd5_958F_5C2919BDFABB.png" usemap="#imagemap-EAID_53BF1B47_98ED_4fd5_958F_5C2919BDFABB" alt="Diagram &#xA;                              &#xA;                           "><map name="imagemap-EAID_53BF1B47_98ED_4fd5_958F_5C2919BDFABB"><area shape="rect" alt="Adres" coords="48,351,506,727" href="#graph_EAID_7CB20E53_21F1_4c96_9274_B578A7A354BA"></map><p><b>Adres - detail</b></p>
+               <div class="imageinfo "><img src="data/Images/EAID_D9868D99_5709_40c7_B8D1_E6C6E5663F79.png" usemap="#imagemap-EAID_D9868D99_5709_40c7_B8D1_E6C6E5663F79" alt="Diagram &#xA;                              &#xA;                           "><map name="imagemap-EAID_D9868D99_5709_40c7_B8D1_E6C6E5663F79"><area shape="rect" alt="Adres" coords="48,351,506,727" href="#graph_EAID_878292C3_0E77_424a_B7CB_CEDC5517C209"></map><p><b>Adres - detail</b></p>
                </div>
             </section>
             
@@ -836,7 +1005,7 @@
                         <a class="link" href="#detail_association_Adres_Adres_registratiegegevens">is­Geregistreerd­Met: registratiegegevens</a>
                         
                         
-                        <a class="link" href="#global_class_Adres_Registratiegegevens">Registratiegegevens</a>
+                        <a class="link" href="#global_class_Registratiegegevens_Registratiegegevens">Registratiegegevens</a>
                         
                         [ 1 ]
                         </td>
@@ -852,12 +1021,15 @@
                         
                         [ 1 ]
                         
-                        <a class="link" href="#detail_association_Gebouw_Gebouw_gerelateerdAdres">heeft als adres: gerelateerd­Adres</a>
+                        <a class="link" href="#detail_association_Gebouw_Gebouw_adres">heeft­Als­Adres: adres</a>
                         
                         Adres
-                        [ 0 .. * ]
+                        [ 0 .. 1 ]
                         </td>
-                     <td></td>
+                     <td>
+                        
+                        <p>Gerelateerd adres, dat een Gebouw heeft.</p>
+                        </td>
                   </tr>
                   <tr>
                      <td>
@@ -891,7 +1063,7 @@
             </table>
             
             </section>
-         <a class="anchor" id="graph_EAID_E66F3BA0_C5A5_4ffc_A5B5_40FA9D159664"></a><a class="anchor" id="global_class_Adres_GeorkestreerdGegeven"></a><section id="global_class_Adres_GeorkestreerdGegeven">
+         <a class="anchor" id="graph_EAID_D491B23F_26CD_4439_9484_E4C7C6FCCC9A"></a><a class="anchor" id="global_class_Adres_GeorkestreerdGegeven"></a><section id="global_class_Adres_GeorkestreerdGegeven">
             <h5>   Georkestreerd­Gegeven</h5>
             
             <table style="width: 100%;">
@@ -1006,11 +1178,11 @@
                   <tr>
                      <td>
                         
-                        <a class="link" href="#global_class_Adres_Registratiegegevens">Registratiegegevens</a>
+                        <a class="link" href="#global_class_Registratiegegevens_Registratiegegevens">Registratiegegevens</a>
                         
                         [ 1 ]
                         
-                        <a class="link" href="#detail_association_Adres_Registratiegegevens_gegeven">bestaat­Uit: gegeven</a>
+                        <a class="link" href="#detail_association_Registratiegegevens_Registratiegegevens_gegeven">bestaat­Uit: gegeven</a>
                         
                         Georkestreerd­Gegeven
                         [ 1 .. * ]
@@ -1021,7 +1193,7 @@
             </table>
             
             </section>
-         <a class="anchor" id="graph_EAID_F142B7A3_7226_4274_89DB_4BC9924443BB"></a><a class="anchor" id="global_class_Adres_GeorkesteerdCharacterStringGegeven"></a><section id="global_class_Adres_GeorkesteerdCharacterStringGegeven">
+         <a class="anchor" id="graph_EAID_A9BA6345_A665_4088_9686_9CE33CDC07C4"></a><a class="anchor" id="global_class_Adres_GeorkesteerdCharacterStringGegeven"></a><section id="global_class_Adres_GeorkesteerdCharacterStringGegeven">
             <h5>   Georkesteerd­Character­String­Gegeven</h5>
             
             <table style="width: 100%;">
@@ -1098,7 +1270,7 @@
             </table>
             
             </section>
-         <a class="anchor" id="graph_EAID_510A2E5E_519F_4c4a_8414_BA6B5888BCF4"></a><a class="anchor" id="global_class_Adres_GeorkestreerdIntegerGegeven"></a><section id="global_class_Adres_GeorkestreerdIntegerGegeven">
+         <a class="anchor" id="graph_EAID_B520BF1A_0FB9_439f_A157_543DEBB14D13"></a><a class="anchor" id="global_class_Adres_GeorkestreerdIntegerGegeven"></a><section id="global_class_Adres_GeorkestreerdIntegerGegeven">
             <h5>   Georkestreerd­Integer­Gegeven</h5>
             
             <table style="width: 100%;">
@@ -1175,7 +1347,7 @@
             </table>
             
             </section>
-         <a class="anchor" id="graph_EAID_02111E28_01C4_4d78_BFAA_F90B177BBCDD"></a><a class="anchor" id="global_class_Adres_GeorkestreerdBooleanGegeven"></a><section id="global_class_Adres_GeorkestreerdBooleanGegeven">
+         <a class="anchor" id="graph_EAID_DB7E6D62_4FE3_4d3a_875F_B3C751D080D5"></a><a class="anchor" id="global_class_Adres_GeorkestreerdBooleanGegeven"></a><section id="global_class_Adres_GeorkestreerdBooleanGegeven">
             <h5>   Georkestreerd­Boolean­Gegeven</h5>
             
             <table style="width: 100%;">
@@ -1252,7 +1424,7 @@
             </table>
             
             </section>
-         <a class="anchor" id="graph_EAID_6F285CEC_722C_4f48_A5F4_3387E64E7F20"></a><a class="anchor" id="global_class_Adres_Brongegeven"></a><section id="global_class_Adres_Brongegeven">
+         <a class="anchor" id="graph_EAID_0E79B496_DB38_44e8_BC89_B98A0DF57E54"></a><a class="anchor" id="global_class_Adres_Brongegeven"></a><section id="global_class_Adres_Brongegeven">
             <h5>   Brongegeven</h5>
             
             <table style="width: 100%;">
@@ -1388,7 +1560,7 @@
             </table>
             
             </section>
-         <a class="anchor" id="graph_EAID_20AB81B7_2590_46f1_8C2A_BC70ED995C7E"></a><a class="anchor" id="global_class_Adres_BronCharacterStringGegeven"></a><section id="global_class_Adres_BronCharacterStringGegeven">
+         <a class="anchor" id="graph_EAID_5943745A_DB99_4c29_B52A_69B32B9C590B"></a><a class="anchor" id="global_class_Adres_BronCharacterStringGegeven"></a><section id="global_class_Adres_BronCharacterStringGegeven">
             <h5>   Bron­Character­String­Gegeven</h5>
             
             <table style="width: 100%;">
@@ -1465,7 +1637,7 @@
             </table>
             
             </section>
-         <a class="anchor" id="graph_EAID_F76A4561_3BB5_4a7e_A5FE_6CFDFB2263CE"></a><a class="anchor" id="global_class_Adres_BronIntegerGegeven"></a><section id="global_class_Adres_BronIntegerGegeven">
+         <a class="anchor" id="graph_EAID_A4196975_6D0A_4ecb_9B70_8C7AB7713AC2"></a><a class="anchor" id="global_class_Adres_BronIntegerGegeven"></a><section id="global_class_Adres_BronIntegerGegeven">
             <h5>   Bron­Integer­Gegeven</h5>
             
             <table style="width: 100%;">
@@ -1542,7 +1714,7 @@
             </table>
             
             </section>
-         <a class="anchor" id="graph_EAID_7EC0BD12_CC6D_4985_9775_A9444425C558"></a><a class="anchor" id="global_class_Adres_BronRelatieGegeven"></a><section id="global_class_Adres_BronRelatieGegeven">
+         <a class="anchor" id="graph_EAID_C2F545EF_5878_4fc8_AEE9_014F22468018"></a><a class="anchor" id="global_class_Adres_BronRelatieGegeven"></a><section id="global_class_Adres_BronRelatieGegeven">
             <h5>   Bron­Relatie­Gegeven</h5>
             
             <table style="width: 100%;">
@@ -1608,7 +1780,7 @@
             </table>
             
             </section>
-         <a class="anchor" id="graph_EAID_44DF73BB_8097_4764_A7C6_560681686575"></a><a class="anchor" id="global_class_Adres_Bronobject"></a><section id="global_class_Adres_Bronobject">
+         <a class="anchor" id="graph_EAID_BC4B20FB_EC3C_47f2_8B52_C348132ABFE3"></a><a class="anchor" id="global_class_Adres_Bronobject"></a><section id="global_class_Adres_Bronobject">
             <h5>   Bronobject</h5>
             
             <table style="width: 100%;">
@@ -1726,7 +1898,7 @@
             </table>
             
             </section>
-         <a class="anchor" id="graph_EAID_48A6619D_3B7D_415e_9FA0_2BF5D0FD977C"></a><a class="anchor" id="global_class_Adres_Bronregistratie"></a><section id="global_class_Adres_Bronregistratie">
+         <a class="anchor" id="graph_EAID_91824BE2_744A_493a_B278_52A94A295205"></a><a class="anchor" id="global_class_Adres_Bronregistratie"></a><section id="global_class_Adres_Bronregistratie">
             <h5>   Bronregistratie</h5>
             
             <table style="width: 100%;">
@@ -1814,7 +1986,7 @@
             </table>
             
             </section>
-         <a class="anchor" id="graph_EAID_3564EFD2_FBE1_4a1a_9352_5D032D01B633"></a><a class="anchor" id="global_class_Adres_BronComplexGegeven"></a><section id="global_class_Adres_BronComplexGegeven">
+         <a class="anchor" id="graph_EAID_15378C59_C1A0_41d1_BF5E_870166399058"></a><a class="anchor" id="global_class_Adres_BronComplexGegeven"></a><section id="global_class_Adres_BronComplexGegeven">
             <h5>   Bron­Complex­Gegeven</h5>
             
             <table style="width: 100%;">
@@ -1870,7 +2042,7 @@
             </table>
             
             </section>
-         <a class="anchor" id="graph_EAID_BAF62FB7_C205_47fe_A97D_5DCC9B0383FA"></a><a class="anchor" id="global_class_Adres_GeorkestreerdComplexGegeven"></a><section id="global_class_Adres_GeorkestreerdComplexGegeven">
+         <a class="anchor" id="graph_EAID_29177C19_3F88_4253_A3E7_9B1E87676A5A"></a><a class="anchor" id="global_class_Adres_GeorkestreerdComplexGegeven"></a><section id="global_class_Adres_GeorkestreerdComplexGegeven">
             <h5>   Georkestreerd­Complex­Gegeven</h5>
             
             <table style="width: 100%;">
@@ -1926,67 +2098,7 @@
             </table>
             
             </section>
-         <a class="anchor" id="graph_EAID_D5B686AC_C8DB_4beb_A9F2_64748CA22F53"></a><a class="anchor" id="global_class_Adres_Registratiegegevens"></a><section id="global_class_Adres_Registratiegegevens">
-            <h5>   Registratiegegevens</h5>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Naam</th>
-                     <td>Registratiegegevens</td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            <h6>Overzicht relaties  </h6>
-            
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 50%;"></colgroup>
-               <colgroup style="width: 50%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Rol naam met kardinaliteiten</th>
-                     <th>Definitie</th>
-                  </tr>
-                  <tr>
-                     <td>
-                        Registratiegegevens
-                        [ 1 ]
-                        
-                        <a class="link" href="#detail_association_Adres_Registratiegegevens_gegeven">bestaat­Uit: gegeven</a>
-                        
-                        
-                        <a class="link" href="#global_class_Adres_GeorkestreerdGegeven">Georkestreerd­Gegeven</a>
-                        
-                        [ 1 .. * ]
-                        </td>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <td>
-                        
-                        <a class="link" href="#global_class_Adres_Adres">Adres</a>
-                        
-                        [ 1 ]
-                        
-                        <a class="link" href="#detail_association_Adres_Adres_registratiegegevens">is­Geregistreerd­Met: registratiegegevens</a>
-                        
-                        Registratiegegevens
-                        [ 1 ]
-                        </td>
-                     <td>
-                        
-                        <p>Registraties, waarmee Adres is geregistreerd.</p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-            
-            </section>
-         <a class="anchor" id="graph_EAID_E5E5E478_893B_4551_A785_802A0B76A19A"></a><a class="anchor" id="global_class_Adres_GeorkestreerdRelatieGegeven"></a><section id="global_class_Adres_GeorkestreerdRelatieGegeven">
+         <a class="anchor" id="graph_EAID_5221DBD0_7FFF_4a49_9F50_CD781D647642"></a><a class="anchor" id="global_class_Adres_GeorkestreerdRelatieGegeven"></a><section id="global_class_Adres_GeorkestreerdRelatieGegeven">
             <h5>   Georkestreerd­Relatie­Gegeven</h5>
             
             <table style="width: 100%;">
@@ -2051,7 +2163,7 @@
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
                <tr>
-                  <th><a class="anchor" id="graph_EAID_B3F6E75D_2150_436f_AE40_41C5A457CA43"></a><a class="anchor" id="global_class_Adres_Registratie"></a><a class="link" href="#detail_class_Adres_Registratie">Registratie</a></th>
+                  <th><a class="anchor" id="graph_EAID_6663A0EB_7675_49cd_8E20_3AC555D14E8C"></a><a class="anchor" id="global_class_Adres_Registratie"></a><a class="link" href="#detail_class_Adres_Registratie">Registratie</a></th>
                   <td>
                      
                      <p>Waardenlijst voor Bronregistratie.</p>
@@ -2701,7 +2813,7 @@
                         <tr>
                            <th>Gerelateerd objecttype</th>
                            <td>
-                              <a class="link" href="#global_class_Adres_Registratiegegevens">Registratiegegevens</a>
+                              <a class="link" href="#global_class_Registratiegegevens_Registratiegegevens">Registratiegegevens</a>
                               </td>
                         </tr>
                      </tbody>
@@ -3356,46 +3468,6 @@
                   </table>
                   </div>
                </section>
-            <a class="anchor" id="detail_class_Adres_Registratiegegevens"></a><section id="detail_class_Adres_Registratiegegevens">
-               <h6>   Registratiegegevens</h6>
-               <a class="anchor" id="detail_association_Adres_Registratiegegevens_gegeven"></a><div class="deepheader" id="detail_association_Adres_Registratiegegevens_gegeven">
-                  <h7>Relatiesoort details  <a href="#global_class_Adres_Registratiegegevens">Registratiegegevens</a> bestaat­Uit</h7>
-                  
-                  
-                  <table style="width: 100%;">
-                     <colgroup style="width: 30%;"></colgroup>
-                     <colgroup style="width: 70%;"></colgroup>
-                     <tbody>
-                        <tr>
-                           <th>Naam</th>
-                           <td>bestaat­Uit</td>
-                        </tr>
-                        <tr>
-                           <th>Mogelijk geen waarde</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie materiële historie</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Indicatie formele historie</th>
-                           <td>Nee</td>
-                        </tr>
-                        <tr>
-                           <th>Kardinaliteit</th>
-                           <td>1 .. *</td>
-                        </tr>
-                        <tr>
-                           <th>Gerelateerd objecttype</th>
-                           <td>
-                              <a class="link" href="#global_class_Adres_GeorkestreerdGegeven">Georkestreerd­Gegeven</a>
-                              </td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               </section>
             <a class="anchor" id="detail_class_Adres_GeorkestreerdRelatieGegeven"></a><section id="detail_class_Adres_GeorkestreerdRelatieGegeven">
                <h6>   Georkestreerd­Relatie­Gegeven</h6>
                <a class="anchor" id="detail_association_Adres_GeorkestreerdRelatieGegeven_waarde"></a><div class="deepheader" id="detail_association_Adres_GeorkestreerdRelatieGegeven_waarde">
@@ -3443,13 +3515,144 @@
          
          
          </section>
+   </section><a class="anchor" id="global_package_Registratiegegevens"></a><section id="global_package_Registratiegegevens">
+      <h3>Domein   Registratiegegevens</h3>
+      <section id="">
+         <h4>Objecttypen   </h4>
+         <a class="anchor" id="graph_EAID_7DEC5472_21EE_4ba3_9C92_9C1D01D3450F"></a><a class="anchor" id="global_class_Registratiegegevens_Registratiegegevens"></a><section id="global_class_Registratiegegevens_Registratiegegevens">
+            <h5>   Registratiegegevens</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>Registratiegegevens</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht relaties  </h6>
+            
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Rol naam met kardinaliteiten</th>
+                     <th>Definitie</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Registratiegegevens
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_Registratiegegevens_Registratiegegevens_gegeven">bestaat­Uit: gegeven</a>
+                        
+                        
+                        <a class="link" href="#global_class_Adres_GeorkestreerdGegeven">Georkestreerd­Gegeven</a>
+                        
+                        [ 1 .. * ]
+                        </td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>
+                        
+                        <a class="link" href="#global_class_Gebouw_Gebouw">Gebouw</a>
+                        
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_Gebouw_Gebouw_registratiegegevens">is­Geregistreerd­Met: registratiegegevens</a>
+                        
+                        Registratiegegevens
+                        [ 1 ]
+                        </td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>
+                        
+                        <a class="link" href="#global_class_Adres_Adres">Adres</a>
+                        
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_Adres_Adres_registratiegegevens">is­Geregistreerd­Met: registratiegegevens</a>
+                        
+                        Registratiegegevens
+                        [ 1 ]
+                        </td>
+                     <td>
+                        
+                        <p>Registraties, waarmee Adres is geregistreerd.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         </section>
+      <section id="">
+         <h4>Attribuut- en relatiesoort details  </h4>
+         
+         <section id="">
+            <h5>Objecttype details  </h5>
+            <a class="anchor" id="detail_class_Registratiegegevens_Registratiegegevens"></a><section id="detail_class_Registratiegegevens_Registratiegegevens">
+               <h6>   Registratiegegevens</h6>
+               <a class="anchor" id="detail_association_Registratiegegevens_Registratiegegevens_gegeven"></a><div class="deepheader" id="detail_association_Registratiegegevens_Registratiegegevens_gegeven">
+                  <h7>Relatiesoort details  <a href="#global_class_Registratiegegevens_Registratiegegevens">Registratiegegevens</a> bestaat­Uit</h7>
+                  
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Naam</th>
+                           <td>bestaat­Uit</td>
+                        </tr>
+                        <tr>
+                           <th>Mogelijk geen waarde</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie materiële historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Indicatie formele historie</th>
+                           <td>Nee</td>
+                        </tr>
+                        <tr>
+                           <th>Kardinaliteit</th>
+                           <td>1 .. *</td>
+                        </tr>
+                        <tr>
+                           <th>Gerelateerd objecttype</th>
+                           <td>
+                              <a class="link" href="#global_class_Adres_GeorkestreerdGegeven">Georkestreerd­Gegeven</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               </section>
+            </section>
+         
+         
+         
+         
+         
+         </section>
    </section>
 </section>
 <section id="lis" class="normative">
    <h2>Inhoud van waardenlijsten</h2>
-   <!--MIMCM-Gebouw-1.0-0-20230301-20230228-085137 imvertor 2.0.0-->
+   <!--MIMCM-Gebouw-logisch-1.0-0-20230301-20230228-100827 imvertor 2.0.0-->
    <section id="">
-      <h3>Enumeratie inhoud   </h3><a class="anchor" id="graph_EAID_B3F6E75D_2150_436f_AE40_41C5A457CA43"></a><a class="anchor" id="detail_class_Adres_Registratie"></a><section id="detail_class_Adres_Registratie">
+      <h3>Enumeratie inhoud   </h3><a class="anchor" id="graph_EAID_6663A0EB_7675_49cd_8E20_3AC555D14E8C"></a><a class="anchor" id="detail_class_Adres_Registratie"></a><section id="detail_class_Adres_Registratie">
          <h4>Enumeratie details  Registratie</h4>
          
          <table style="width: 100%;" class="list">
