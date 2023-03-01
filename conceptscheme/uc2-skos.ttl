@@ -90,3 +90,12 @@ bk:WaU-SAM
    skos:broadMatch <http://bag.basisregistraties.overheid.nl/id/begrip/Hoofdadres> ;
    skos:broadMatch <http://bag.basisregistraties.overheid.nl/id/begrip/Nevenadres> ;
 .
+
+:sloopjaar
+   a skos:Concept ;
+   skos:definition "Het jaar dat de sloop van een gebouw is voltooid."@nl ;
+   skos:prefLabel "sloopjaar"@nl ;
+   rdfs:label "sloopjaar" ;
+   skos:inScheme bk:WaU-SAM ;
+   skos:related <http://bag.basisregistraties.overheid.nl/id/begrip/PandGesloopt> ;
+.
