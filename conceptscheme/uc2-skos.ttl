@@ -49,6 +49,7 @@ bk:WaU-SAM
    rdfs:label "geometrie" ;
    skos:inScheme bk:WaU-SAM ;
    skos:closeMatch <http://definities.geostandaarden.nl/nen3610-2022/id/begrip/georeferentie> ;
+   skos:narrowMatch <http://bag.basisregistraties.overheid.nl/id/begrip/Geometrie> ;
 .
 
 :3d_geometrie
@@ -57,6 +58,7 @@ bk:WaU-SAM
    skos:prefLabel "3D-geometrie"@nl ;
    rdfs:label "3D-geometrie" ;
    skos:inScheme bk:WaU-SAM ;
+   skos:broader :geometrie ;
 .
 
 :maaiveldgeometrie
@@ -65,6 +67,7 @@ bk:WaU-SAM
    skos:prefLabel "maaiveldgeometrie"@nl ;
    rdfs:label "maaiveldgeometrie" ;
    skos:inScheme bk:WaU-SAM ;
+   skos:broader :geometrie ;
 .
 
 :gebouwtype
@@ -73,22 +76,20 @@ bk:WaU-SAM
    skos:prefLabel "gebouwtype"@nl ;
    rdfs:label "gebouwtype" ;
    skos:inScheme bk:WaU-SAM ;
-   # related of broadMatch?
-   skos:broadMatch <http://bag.basisregistraties.overheid.nl/id/begrip/Gebruiksdoel> ;
-   skos:broadMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Bgt-type_overigBouwwerk> ;
-   skos:broadMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Plus-type_overigBouwwerk> ;
-   skos:broadMatch <http://brt.basisregistraties.overheid.nl/id/begrip/TypeGebouw> ;
+   skos:narrowMatch <http://bag.basisregistraties.overheid.nl/id/begrip/Gebruiksdoel> ;
+   skos:narrowMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Bgt-type_overigBouwwerk> ;
+   skos:narrowMatch <http://definities.geostandaarden.nl/imgeo/id/begrip/Plus-type_overigBouwwerk> ;
+   skos:narrowMatch <http://brt.basisregistraties.overheid.nl/id/begrip/TypeGebouw> ;
 .
 
-# is deze wel nodig naast http://bag.basisregistraties.overheid.nl/id/begrip/Adres
 :heeft_als_adres
    a skos:Concept ;
    skos:definition "Relatie van een object met een adres."@nl ;
    skos:prefLabel "heeft als adres"@nl ;
    rdfs:label "heeft als adres" ;
    skos:inScheme bk:WaU-SAM ;
-   skos:broadMatch <http://bag.basisregistraties.overheid.nl/id/begrip/Hoofdadres> ;
-   skos:broadMatch <http://bag.basisregistraties.overheid.nl/id/begrip/Nevenadres> ;
+   skos:narrowMatch <http://bag.basisregistraties.overheid.nl/id/begrip/Hoofdadres> ;
+   skos:narrowMatch <http://bag.basisregistraties.overheid.nl/id/begrip/Nevenadres> ;
 .
 
 :sloopjaar
