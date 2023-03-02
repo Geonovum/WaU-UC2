@@ -2,173 +2,98 @@
 
 ## Vertaalspecificaties
 
-Een adres bestaat uit een samenstelling van attribuutwaarden van 3 IMBAG objecttypen: Nummeraanduidingreeks, Openbareruimte en Woonplaats.
+Zie ook Mapping UML - SKOS begrippen.
 
-![](media/23df9f803f23bc2b9d43cde4f3c49112.png)
+### «Domein» Registratiegegevens
 
-De relatie tussen de attributen van IMBAG en het Productmodel Adres staat hieronder gespecificieerd.
+| **Productmodel Gebouw** |                     |              | **Bronregistraties** |                |                     |              |
+|-------------------------|---------------------|--------------|----------------------|----------------|---------------------|--------------|
+| **objecttype**          | **attribuut**       | **datatype** | **Registratie**      | **objecttype** | **attribuut**       | **datatype** |
+| Registratiegegevens     | tijdstipRegistratie | Tijdstip     | BAG                  | Pand           | tijdstipRegistratie | Tijdstip     |
+|                         |                     |              | BGT                  | OverigBouwwerk | tijdstipRegistratie | Tijdstip     |
+|                         | eindRegistratie     | Tijdstip     | BAG                  | Pand           | eindRegistratie     | Tijdstip     |
+|                         |                     |              | BGT                  | OverigBouwwerk | eindRegistratie     | Tijdstip     |
 
-### Objecttype Adres
+### «Domein» Gebouw
 
-Voor objecttype Adres wordt een attribuutwaarde in gevuld met de waarde welke correspondeert met een attribuutwaarde van een objecttype in de BAG conform onderstaande tabel.
+| **Productmodel Gebouw** |                         |                      | **Bronregistraties** |                                                  |                                            |                                         |
+|-------------------------|-------------------------|----------------------|----------------------|--------------------------------------------------|--------------------------------------------|-----------------------------------------|
+| **objecttype**          | **attribuut**           | **datatype**         | **Registratie**      | **objecttype**                                   | **attribuut**                              | **datatype**                            |
+| Gebouw                  | identificatie           | CharacterString {id} |                      | Nummeraanduiding                                 | identificatie                              | Objectnummering                         |
+|                         | domein                  | CharacterString {id} |                      |                                                  |                                            |                                         |
+|                         | type                    | CharacterString      | BAG                  | Verblijfsobject dat onderdeel uit maakt van Pand | gebruiksdoel                               | Gebruiksdoel                            |
+|                         | bouwjaar                | Integer              | BAG                  | Pand                                             | Oorspronkjelijk bouwjaar                   | Jaar                                    |
+|                         | sloopjaar               | Integer              | BAG                  | Pand                                             | beginGeldigheid van status ‘Pand gesloopt’ | Datum                                   |
+|                         |                         |                      | BGT                  | OverigBouwwerk                                   | bgt-type plus-type                         | TypeOverigBouwwerk TypeOverBouwwerkPlus |
+|                         |                         |                      | BRT                  | Gebouw                                           | typeGebouw                                 | TypeGebouw                              |
+|                         | geometrie:bovenaanzicht | Vlak                 | BAG                  | Pand                                             | geometrie                                  | Vlak                                    |
+|                         | geometrie:maaiveld      | MultiVlak            | BGT                  | Pand OverigBouwwerk                              | geometrie2d geometrie2d                    | Multivlak Vlak of Multivlak             |
+|                         | geometrie:3d            | LOD2                 | 3D basisbestand      |                                                  |                                            |                                         |
+|                         |                         |                      |                      |                                                  |                                            |                                         |
 
-| **Productmodel Adres** |                      |                      | **IMBAG**                                                                    |                            |                 |   |   |   |
-|------------------------|----------------------|----------------------|------------------------------------------------------------------------------|----------------------------|-----------------|---|---|---|
-| **objecttype**         | **attribuut**        | **datatype**         | **objecttype**                                                               | **attribuut**              | **datatype**    |   |   |   |
-| Adres                  | identificatie        | CharacterString {id} | Nummeraanduiding                                                             | identificatie              | Objectnummering |   |   |   |
-|                        | omschrijving         | CharacterString      |                                                                              |                            |                 |   |   |   |
-|                        | huisnummer           | Integer              |                                                                              | huisnummer                 | Integer         |   |   |   |
-|                        | huisletter           | CharacterString      |                                                                              | huisletter                 | AN              |   |   |   |
-|                        | huisnummertoevoeging | CharacterString      |                                                                              | huisnummertoevoeging       | AN              |   |   |   |
-|                        | postcode             | CharacterString      |                                                                              | postcode                   | AN              |   |   |   |
-|                        |                      |                      |                                                                              | gerelateerdeOpenbareRuimte | Objectnummering |   |   |   |
-|                        | straatnaam           | CharacterString      | Openbareruimte                                                               | naam                       | AN              |   |   |   |
-|                        |                      |                      |                                                                              | gerelateerdeWoonplaats     | Objectnummering |   |   |   |
-|                        | woonplaats           | CharacterString      | Woonplaats                                                                   | naam                       | AN              |   |   |   |
-|                        | *isHoofdadres*       | *Boolean*            | *«Nummeraanduiding:identificatie» == «AdresseerbaarObject:gerelateerdAdres»* | *relatie*                  |                 |   |   |   |
+### Mapping BAG VBO gebruiksdoel naar PM Gebouw:type
 
-Adres:nummeraanduiding is samenstelling van verschillende attributen:
+#### BAG gebruiksdoelen
 
--   naam van BAG:OpenbareRuimte:naam,
--   gevolgd door een spatie, gevolgd door huisnummer van BAG:Nummeraanduiding,
--   evt. gevolgd door spatie en huisnummerletter van BAG:Nummeraanduiding,
--   evt. gevolgd door koppelteken (-) en huisnummertoevoeging van BAG:Nummeraanduiding, gevolgd door komma en spatie,
--   gevolgd door postcode van BAG:Nummeraanduiding,
--   gevolgd door twee spatie,
--   gevolgd door naam van BAG:Woonplaats
+| **Waarden**             | **Omschrijving**                                                                                                                                                                                        |
+|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Woonfunctie             | Gebruiksfunctie voor het wonen                                                                                                                                                                          |
+| Bijeenkomstfunctie      | Gebruiksfunctie voor het samenkomen van personen voor kunst, cultuur, godsdienst, communicatie, kinderopvang, het verstrekken van consumpties voor het gebruik ter plaatse of het aanschouwen van sport |
+| Celfunctie              | Gebruiksfunctie voor het dwangverblijf van personen                                                                                                                                                     |
+| Gezondheidszorgfunctie  | Gebruiksfunctie voor medisch onderzoek, verpleging, verzorging of behandeling                                                                                                                           |
+| Industriefunctie        | Gebruiksfunctie voor het bedrijfsmatig bewerken of opslaan van materialen en goederen, of voor agrarische doeleinden                                                                                    |
+| Kantoorfunctie          | Gebruiksfunctie voor administratie                                                                                                                                                                      |
+| Logiesfunctie           | Gebruiksfunctie voor het bieden van recreatief verblijf of tijdelijk onderdak aan personen                                                                                                              |
+| Onderwijsfunctie        | Gebruiksfunctie voor het geven van onderwijs                                                                                                                                                            |
+| Sportfunctie            | Gebruiksfunctie voor het beoefenen van sport                                                                                                                                                            |
+| Winkelfunctie           | Gebruiksfunctie voor het verhandelen van materialen, goederen of diensten                                                                                                                               |
+| Overige gebruiksfunctie | Niet in dit lid benoemde gebruiksfunctie voor activiteiten waarbij het verblijven van personen een ondergeschikte rol speelt                                                                            |
 
-Bijvoorbeeld
+#### Mapping BAG gebruiksdoel op Gebouw type
 
-“Barchman Wuytierslaan 10, 3818LH Amersfoort”
+| **BAG Verblijfsobject: gebruiksdoel** | **PM Gebouw: type**        |
+|---------------------------------------|----------------------------|
+| Woonfunctie                           | woning                     |
+| Bijeenkomstfunctie                    |                            |
+| Celfunctie                            | gevangeniscomplex          |
+| Gezondheidszorgfunctie                | medisch centrum            |
+| Industriefunctie                      |                            |
+| Kantoorfunctie                        | kantoorgebouw              |
+| Logiesfunctie                         |                            |
+| Onderwijsfunctie                      | universiteit, schoolgebouw |
+| Sportfunctie                          |                            |
+| Winkelfunctie                         |                            |
+| Overige gebruiksfunctie               |                            |
 
->   “Korenaarstraat 33 A-1, Nieuw-Vennep”
+#### Combinaties meerdere gebruiksdoelen naar Gebouw type
 
-Reguliere expressie:
+Twee of meer verblijfsobjecten maken onderdeel uit van een Pand:
 
-\^(«BAG:OpenbareRuimte:naam»)(\\s)(«BAG:Nummeraanduiding:huisnummer»)(\\s)(«BAG:Nummeraanduiding:huisletter»)(\\-)(«BAG:Nummeraanduiding:huisnummertoevoeging»)(,\\s)(«BAG:Nummeraanduiding:postcode»)(\\s\\s)(BAG:Woonplaats:naam)
+| BAG Verblijfsobject: gebruiksdoel  | PM Gebouw: type |
+|------------------------------------|-----------------|
+| Woonfunctie Kantoorfunctie         | woonkantoor     |
+| Woonfunctie gezondheidszorgfunctie | woonzorgcomplex |
+|                                    |                 |
+|                                    |                 |
 
-### Objecttype Orkestratiegegeven
+### 
 
-Voor objecttype Orkestratiegegeven wordt een kenmerk gevuld met de waarde welke correspondeert met een attribuutwaarde van objecttype Adres conform onderstaande tabel.
+### «Domein» Adres
 
-| **Productmodel Adres** |                      | **Productmodel Adres** |                |
-|------------------------|----------------------|------------------------|----------------|
-| **objecttype**         | **kenmerk**          | **objecttype**         | **attribuut**  |
-| Orkestratiegegeven     | identificatie        | Adres                  | identificatie  |
-|                        | omschrijving         |                        | omschrijving   |
-|                        | huisnummer           |                        | huisnummer     |
-|                        | huisletter           |                        | huisletter     |
-|                        | huisnummertoevoeging | huisnummertoevoeging   |                |
-|                        | postcode             |                        | postcode       |
-|                        |                      |                        |                |
-|                        | straatnaam           |                        | straatnaam     |
-|                        |                      |                        |                |
-|                        | woonplaats           |                        | woonplaats     |
-|                        | *isHoofdadres*       |                        | *isHoofdadres* |
-|                        |                      |                        |                |
-|                        | **Bronregistratie**  | naam                   | «BAG»          |
+Zie <https://geonovum.github.io/WaU-UC2>.
 
-### Objecttype Brongegeven
+## Prioriteit
 
-Voor objecttype Brongegeven wordt een kenmerk gevuld met de waarde welke correspondeert met een attribuutwaarde van een objecttype uit de BAG conform onderstaande tabel.
+#### Type
 
-| **Productmodel Adres** |                            | **IMBAG**                                                                    |               |
-|------------------------|----------------------------|------------------------------------------------------------------------------|---------------|
-| **objecttype**         | **kenmerk**                | **objecttype**                                                               | **attribuut** |
-| Brongegeven            | identificatie              | Nummeraanduiding                                                             | identificatie |
-|                        |                            |                                                                              |               |
-|                        | huisnummer                 |                                                                              | huisnummer    |
-|                        | huisletter                 |                                                                              | huisletter    |
-|                        | huisnummertoevoeging       | huisnummertoevoeging                                                         |               |
-|                        | postcode                   |                                                                              | postcode      |
-|                        | gerelateerdeOpenbareRuimte | gerelateerdeOpenbareRuimte                                                   |               |
-|                        | naam                       | Openbareruimte                                                               | naam          |
-|                        | gerelateerdeWoonplaats     | gerelateerdeWoonplaats                                                       |               |
-|                        | naam                       | Woonplaats                                                                   | naam          |
-|                        | *gerelateerdAdres*         | *«Nummeraanduiding:identificatie» == «AdresseerbaarObject:gerelateerdAdres»* |               |
+1.  bgt- of plus-type van BGT OverigBouwwerk
+2.  type van BRT Gebouw
+3.  gebruiksdoel van Verblijfsobject dat onderdeel uit maakt van BAG Pand
 
-### Relatie Orkestratiegegeven is afgeleid uit Brongegeven
+#### Registratiegegevens
 
-Voor objecttype Orkestratiegegeven wordt de relatie ‘is afgeleid van’ met één of meer brongegevens gelegd conform onderstaande tabel.
+tijdstipRegistratie en eindRegistratie :
 
-| **Productmodel Adres** |                      | **Productmodel Adres** |                            |
-|------------------------|----------------------|------------------------|----------------------------|
-| **objecttype**         | **kenmerk**          | **objecttype**         | **kenmerk**                |
-| Orkestratiegegeven     | identificatie        | Brongegeven            | identificatie              |
-|                        | omschrijving         |                        |                            |
-|                        | huisnummer           |                        | huisnummer                 |
-|                        | huisletter           |                        | huisletter                 |
-|                        | huisnummertoevoeging |                        | huisnummertoevoeging       |
-|                        | postcode             |                        | postcode                   |
-|                        |                      |                        | gerelateerdeOpenbareRuimte |
-|                        | straatnaam           |                        | naam                       |
-|                        |                      |                        | gerelateerdeWoonplaats     |
-|                        | woonplaats           |                        | naam                       |
-|                        | *isHoofdadres*       |                        | *gerelateerdAdres*         |
+Optie 1) waarde van BGT of BAG object met het oudste tijdstip; uitgangspunt de actualiteit van de gegevens is zo goed/slecht als de minst actuele?
 
-## JSON Voorbeeld
-
-### Object adres zonder registraties
-
-### `    {`
-
-### `      "adres": {`
-
-### `        "identificatie": "0307200000456181",`
-
-### `        "omschrijving": "Barchman Wuytierslaan 10, 3818LH Amersfoort",`
-
-### `        "straat": "Barchman Wuytierslaan",`
-
-### `        "huisnummer": "10",`
-
-### `        "huisletter": null,`
-
-### `        "huisnummertoevoeging": null,`
-
-### `        "postcode": "3818LH",`
-
-### `        "plaats": "Amersfoort",`
-
-### `    }`
-
-### Registratiegegevens voor attribuut identificatie van Adres
-
-```
-
-```
-
-{"registratiegegevens": {
-
-"orkestratiegegeven.1": {
-
-"kenmerk": "identificatie",
-
-"waarde": "03070201234567890123456",
-
-"brongegeven" : {
-
-"kenmerk": "identificatie",
-
-"waarde”: "03070201234567890123456",
-
-"bronregistratie”: "BAG",
-
-"bronobject" : {
-
-"type": "Nummeraanduiding",
-
-"identificatie": "03070201234567890123456",
-
-},
-
-},
-
-},
-
-}},  
-}
-
-```
-    
-```
+Optie 2) waarde van BGT of BAG object met het nieuwste tijdstip; uitgangspunt de actualiteit van de gegevens is zo goed/slecht als de meest actuele?
