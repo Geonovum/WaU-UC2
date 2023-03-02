@@ -31,9 +31,9 @@ Zie ook Mapping UML - SKOS begrippen.
 |                         | geometrie:3d            | LOD2                 | 3D basisbestand      |                                                  |                                            |                                         |
 |                         |                         |                      |                      |                                                  |                                            |                                         |
 
-### Mapping BAG VBO gebruiksdoel naar PM Gebouw:type
+#### Mapping BAG VBO gebruiksdoel naar PM Gebouw:type
 
-#### BAG gebruiksdoelen
+##### BAG gebruiksdoelen
 
 | **Waarden**             | **Omschrijving**                                                                                                                                                                                        |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -49,7 +49,7 @@ Zie ook Mapping UML - SKOS begrippen.
 | Winkelfunctie           | Gebruiksfunctie voor het verhandelen van materialen, goederen of diensten                                                                                                                               |
 | Overige gebruiksfunctie | Niet in dit lid benoemde gebruiksfunctie voor activiteiten waarbij het verblijven van personen een ondergeschikte rol speelt                                                                            |
 
-#### Mapping BAG gebruiksdoel op Gebouw type
+##### Mapping BAG gebruiksdoel op Gebouw type
 
 | **BAG Verblijfsobject: gebruiksdoel** | **PM Gebouw: type**        |
 |---------------------------------------|----------------------------|
@@ -65,7 +65,7 @@ Zie ook Mapping UML - SKOS begrippen.
 | Winkelfunctie                         |                            |
 | Overige gebruiksfunctie               |                            |
 
-#### Combinaties meerdere gebruiksdoelen naar Gebouw type
+##### Combinaties meerdere gebruiksdoelen naar Gebouw type
 
 Twee of meer verblijfsobjecten maken onderdeel uit van een Pand:
 
