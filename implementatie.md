@@ -80,7 +80,7 @@ Twee of meer verblijfsobjecten maken onderdeel uit van een Pand:
 
 ### «Domein» Adres
 
-Zie <https://geonovum.github.io/WaU-UC2>.
+Zie [https://geonovum.github.io/WaU-UC2](https://geonovum.github.io/WaU-UC2).
 
 ## Prioriteit
 
