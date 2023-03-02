@@ -1,4 +1,4 @@
-# Samenvatting
+# Inleiding
 
 Dit is een werkdocument ten behoeve van het beproeven/implementeren van een use case inzake het samengesteld opvragen van gegevens over een gebouw uit meerdere bronnen. Uitgangspunt is dat de herkomst (lineage) expliciet wordt beschreven bij de samengestelde gegevens.
 
