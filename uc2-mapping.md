@@ -31,4 +31,4 @@ Elementen in **bold** zijn in nieuw SAM begrippenkader gedefiniëerd.
 | **maaiveld** | https://begrippen.geostandaarden.nl/sam/id/begrip/maaiveldgeometrie | ontbreekt in [IMGeo begrippenkader](https://definities.geostandaarden.nl/imgeo/nl/) |
 | identificatie | http://definities.geostandaarden.nl/nen3610-2022/id/begrip/identificatie | |
 | **type** | https://begrippen.geostandaarden.nl/sam/id/begrip/gebouwtype | Met `narrowMatch` naar BAG `Gebruiksdoel`, BGT `Bgt-type_overigBouwwerk`, BGT `Plus-type_overigBouwwerk`, en BRT `TypeGebouw`. **Vraag**: `narrowMatch` of `related`? |
-| **heeft als adres** | http://bag.basisregistraties.overheid.nl/id/begrip/Adres) | Is geen apart begrip want voegt niets toe aan het BAG begrip Adres. |
+| **heeft als adres** | http://bag.basisregistraties.overheid.nl/id/begrip/Adres | Is geen apart begrip want voegt niets toe aan het BAG begrip Adres. |
