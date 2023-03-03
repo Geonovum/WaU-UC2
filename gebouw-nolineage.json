@@ -55,6 +55,7 @@
   },
   "$defs": {
     "Registratiegegevens": {
+      "title": "Registratiegegevens",
       "type": "object",
       "required": [
         "tijdstipRegistratie",
@@ -75,6 +76,7 @@
       }
     },
     "Gebouw": {
+      "title": "Gebouw",
       "type": "object",
       "required": [
         "identificatie",
