@@ -77,7 +77,7 @@
         "bestaatUit": {
           "type": "array",
           "items": {
-            "$ref": "#/$defs/GeorkestreerdGegeven"
+            "$ref": "#/$defs/GeorkestreerdGegevenChoice"
           }
         }
       }
