@@ -228,6 +228,21 @@
         }
       }
     },
+    "GeorkestreerdGegevenChoice": {
+      "title": "GeorkestreerdGegevenChoice",
+      "type": "object",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/GeorkestreerdSimpelGegeven"
+        },
+        {
+          "$ref": "#/$defs/GeorkestreerdComplexGegeven"
+        },
+        {
+          "$ref": "#/$defs/GeorkestreerdRelatieGegeven"
+        }
+      ]
+    },
     "GeorkestreerdGegeven": {
       "title": "GeorkestreerdGegeven",
       "description": "Een gegeven dat is ontstaan\/verkregen middels het orkestreren van brongegevens.",
@@ -253,66 +268,18 @@
         }
       }
     },
-    "GeorkesteerdCharacterStringGegeven": {
-      "title": "GeorkesteerdCharacterStringGegeven",
-      "description": "GeorkestreerdGegeven met als waarde een CharacterString.",
+    "BrongegevenChoice": {
+      "title": "BrongegevenChoice",
       "type": "object",
-      "allOf": [
+      "oneOf": [
         {
-          "$ref": "#/$defs/GeorkestreerdGegeven"
+          "$ref": "#/$defs/BronSimpelGegeven"
         },
         {
-          "required": [
-            "waarde"
-          ],
-          "properties": {
-            "waarde": {
-              "title": "waarde",
-              "type": "string"
-            }
-          }
-        }
-      ]
-    },
-    "GeorkestreerdIntegerGegeven": {
-      "title": "GeorkestreerdIntegerGegeven",
-      "description": "GeorkestreerdGegeven met als waarde een Integer.",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#\/components\/schemas\/GeorkestreerdGegeven"
+          "$ref": "#/$defs/BronComplexGegeven"
         },
         {
-          "required": [
-            "waarde"
-          ],
-          "properties": {
-            "waarde": {
-              "title": "waarde",
-              "type": "integer"
-            }
-          }
-        }
-      ]
-    },
-    "GeorkestreerdBooleanGegeven": {
-      "title": "GeorkestreerdBooleanGegeven",
-      "description": "GeorkestreerdGegeven met als waarde een Boolean.",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/$defs/GeorkestreerdGegeven"
-        },
-        {
-          "required": [
-            "waarde"
-          ],
-          "properties": {
-            "waarde": {
-              "title": "waarde",
-              "type": "boolean"
-            }
-          }
+          "$ref": "#/$defs/BronRelatieGegeven"
         }
       ]
     },
@@ -347,55 +314,6 @@
           "$ref": "#/$defs/Bronobject"
         }
       }
-    },
-    "BronCharacterStringGegeven": {
-      "title": "BronCharacterStringGegeven",
-      "description": "Brongegeven met als waarde een CharacterString.",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/$defs/Brongegeven"
-        },
-        {
-          "required": [
-            "waarde"
-          ],
-          "properties": {
-            "waarde": {
-              "title": "waarde",
-              "type": "string"
-            }
-          }
-        }
-      ]
-    },
-    "BronIntegerGegeven": {
-      "title": "BronIntegerGegeven",
-      "description": "Brongegeven met als waarde een Integer.",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/$defs/Brongegeven"
-        },
-        {
-          "required": [
-            "waarde"
-          ],
-          "properties": {
-            "waarde": {
-              "title": "waarde",
-              "type": "integer"
-            }
-          }
-        }
-      ]
-    },
-    "Registratie": {
-      "title": "Registratie",
-      "description": "Waardenlijst voor Bronregistratie.",
-      "enum": [
-        "BAG"
-      ]
     },
     "BronRelatieGegeven": {
       "title": "BronRelatieGegeven",
@@ -488,7 +406,7 @@
               "title": "bestaatUit",
               "type": "array",
               "items": {
-                "$ref": "#/$defs/GeorkestreerdGegeven"
+                "$ref": "#/$defs/GeorkestreerdGegevenChoice"
               },
               "minItems": 2
             }
@@ -589,7 +507,7 @@
           "title": "references",
           "type": "array",
           "items": {
-            "$ref": "#/$defs/Brongegeven"
+            "$ref": "#/$defs/BrongegevenChoice"
           },
           "minItems": 0
         },
