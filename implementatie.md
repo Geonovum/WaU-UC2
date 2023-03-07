@@ -84,12 +84,6 @@ Zie <https://geonovum.github.io/WaU-UC2>.
 
 ## Prioriteit
 
-#### Type
-
-1.  bgt- of plus-type van BGT OverigBouwwerk
-2.  type van BRT Gebouw
-3.  gebruiksdoel van Verblijfsobject dat onderdeel uit maakt van BAG Pand
-
 #### Identificatie
 
 Uitgangs- en aandachtspunten:
@@ -116,6 +110,12 @@ Uitgangs- en aandachtspunten:
 | Pand ten onrechte opgevoerd      | status=bestaand of status=plan en ObjectEindtijd |
 
 Voor de High5 Use case 2 Gebouw wordt gemeente Zeewolde als testgebied geselecteerd: Zeewolde voert panden met status ‘plan’ op in de BGT en in Zeewolde komen tenminste de overige bouwwerken van het type 'open loods’, ‘windturbine’ en ‘schuur’ voor.
+
+#### Type
+
+1.  bgt- of plus-type van BGT OverigBouwwerk
+2.  type van BRT Gebouw
+3.  gebruiksdoel van Verblijfsobject dat onderdeel uit maakt van BAG Pand
 
 #### Registratiegegevens
 
