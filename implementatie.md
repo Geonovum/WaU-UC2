@@ -80,7 +80,7 @@ Twee of meer verblijfsobjecten maken onderdeel uit van een Pand:
 
 ### «Domein» Adres
 
-Zie [https://geonovum.github.io/WaU-UC2](https://geonovum.github.io/WaU-UC2).
+Zie <https://geonovum.github.io/WaU-UC2>.
 
 ## Prioriteit
 
@@ -89,6 +89,32 @@ Zie [https://geonovum.github.io/WaU-UC2](https://geonovum.github.io/WaU-UC2).
 1.  bgt- of plus-type van BGT OverigBouwwerk
 2.  type van BRT Gebouw
 3.  gebruiksdoel van Verblijfsobject dat onderdeel uit maakt van BAG Pand
+
+#### Identificatie
+
+Uitgangs- en aandachtspunten:
+
+-   Identificatie (lokaalid) van BGT Pand en BGT OverigBouwwerk wordt gehanteerd als identificatie in het Productmodel Adres.
+-   Via de identificatie van het BAG Pand als attribuut bij het BGT Pand kunnen gegevens uit de BAG worden gerelateerd aan het Gebouw.
+-   Door actualiteitsverschillen kunnen Panden wel in BAG voorkomen en niet in BGT en vice versa. Bijvoorbeeld na mutatiesignalering van luchtfoto’s worden in de BGT Panden opgenomen, welke pas later (in de regel 4 dagen, in de praktijk bij bulksignalering langer) in de BAG worden opgenomen. Als een BAG Pand wordt opgevoerd moet deze vanaf status ‘Bouw gestart’ binnen 6 maanden worden opgevoerd in de BGT.
+-   BGT heeft -met inachtneming van optionele planinformatie van gebouwen- meer gebouwen dan BAG.
+-   Vanaf BAG-status ‘Bouw gestart’ moet een Pand in de BGT worden opgevoerd met status ‘bestaand’. Vanaf BAG-status ‘Bouwvergunning verleend’ mag een Pand in de BGT worden opgevoerd met status ‘plan’.
+
+| BAG Pand                         | BGT Pand                                         |
+|----------------------------------|--------------------------------------------------|
+| Bouwvergunning verleend          | status=plan                                      |
+| Bouw gestart                     | status=bestaand                                  |
+| Pand in gebruik (niet ingemeten) | status=bestaand                                  |
+| Pand in gebruik                  | status=bestaand                                  |
+| Pand buiten gebruik              | status=bestaand                                  |
+| Verbouwing pand                  | status=bestaand                                  |
+| Verbouwing Pand                  | status=bestaand                                  |
+| Sloopvergunning verleend         | status=bestaand                                  |
+| Pand gesloopt                    | status=bestaand en ObjectEindtijd                |
+| Niet gerealiseerd Pand           | status=plan en ObjectEindtijd                    |
+| Pand ten onrechte opgevoerd      | status=bestaand of status=plan en ObjectEindtijd |
+
+Voor de High5 Use case 2 Gebouw wordt gemeente Zeewolde als testgebied geselecteerd: Zeewolde voert panden met status ‘plan’ op in de BGT en in Zeewolde komen tenminste de overige bouwwerken van het type 'open loods’, ‘windturbine’ en ‘schuur’ voor.
 
 #### Registratiegegevens
 
