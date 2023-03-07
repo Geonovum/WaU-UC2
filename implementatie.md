@@ -92,6 +92,7 @@ Uitgangs- en aandachtspunten:
 -   Als een Pand wel in BAG voorkomt en niet in BGT dan wordt de BAG identificatie gehanteerd als identificatie voor Gebouw.
 -   Via de identificatie van het BAG Pand als attribuut bij het BGT Pand kunnen gegevens uit de BAG worden gerelateerd aan het Gebouw.
 -   Door actualiteitsverschillen kunnen Panden wel in BAG voorkomen en niet in BGT en vice versa. Bijvoorbeeld na mutatiesignalering van luchtfoto’s worden in de BGT Panden opgenomen, welke pas later (in de regel 4 dagen, in de praktijk bij bulksignalering langer) in de BAG worden opgenomen. Als een BAG Pand wordt opgevoerd moet deze vanaf status ‘Bouw gestart’ binnen 6 maanden worden opgevoerd in de BGT.
+-   Als een Pand wel in BGT en niet in de BAG heeft het BGT Pand in bepaalde gevallen bestaande BAG-identificatie, bijvoorbeeld 16 nullen, of gemeentecode gevolgd door 12 nullen.
 -   BGT heeft -met inachtneming van optionele planinformatie van gebouwen- meer gebouwen dan BAG.
 -   Vanaf BAG-status ‘Bouw gestart’ moet een Pand in de BGT worden opgevoerd met status ‘bestaand’. Vanaf BAG-status ‘Bouwvergunning verleend’ mag een Pand in de BGT worden opgevoerd met status ‘plan’.
 
