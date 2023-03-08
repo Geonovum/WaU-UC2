@@ -7,10 +7,9 @@
     "identificatie",
     "domein",
     "bouwjaar",
-    "sloopjaar",
     "type",
-    "geometrie",
-    "isGeregistreerdMet"
+    "bovenaanzichtgeometrie",
+    "geregistreerdMet"
   ],
   "properties": {
     "identificatie": {
@@ -21,25 +20,25 @@
       "type": "string"
     },
     "bouwjaar": {
-      "type": [
-        "integer",
-        null
-      ]
+      "type": "string"
     },
     "sloopjaar": {
       "type": [
-        "integer",
-        null
+        "string",
+        "null"
       ]
     },
     "type": {
-      "type": [
-        "string",
-        null
-      ]
+      "type": "string"
     },
-    "geometrie": {
-      "$ref": "#/$defs/Geometrie"
+    "bovenaanzichtgeometrie": {
+      "$ref": "#/$defs/polygonGeoJSON"
+    },
+    "maaiveldgeometrie": {
+      "$ref": "#/$defs/multipolygonGeoJSON"
+    },
+    "3dGeometrie": {
+      "$ref": "#/$defs/MultiPolyhedron"
     },
     "heeftAlsAdres": {
       "description": "Een Gebouw heeft nul of meer Adressen",
@@ -49,7 +48,7 @@
       },
       "minItems": 0
     },
-    "isGeregistreerdMet": {
+    "geregistreerdMet": {
       "$ref": "#/$defs/Registratiegegevens"
     }
   },
@@ -58,19 +57,20 @@
       "title": "Registratiegegevens",
       "type": "object",
       "required": [
-        "tijdstipRegistratie",
-        "eindRegistratie",
         "bestaatUit"
       ],
       "properties": {
         "tijdstipRegistratie": {
-          "type": "string",
+          "type": [
+            "string",
+            "null"
+          ],
           "format": "date-time"
         },
         "eindRegistratie": {
           "type": [
             "string",
-            null
+            "null"
           ],
           "format": "date-time"
         },
@@ -79,80 +79,6 @@
           "items": {
             "$ref": "#/$defs/GeorkestreerdGegevenChoice"
           }
-        }
-      }
-    },
-    "Gebouw": {
-      "title": "Gebouw",
-      "type": "object",
-      "required": [
-        "identificatie",
-        "domein",
-        "bouwjaar",
-        "sloopjaar",
-        "type",
-        "geometrie",
-        "isGeregistreerdMet"
-      ],
-      "properties": {
-        "identificatie": {
-          "type": "string"
-        },
-        "domein": {
-          "description": "Het domein waar het object aan toe behoort.",
-          "type": "string"
-        },
-        "bouwjaar": {
-          "type": [
-            "integer",
-            null
-          ]
-        },
-        "sloopjaar": {
-          "type": [
-            "integer",
-            null
-          ]
-        },
-        "type": {
-          "type": [
-            "string",
-            null
-          ]
-        },
-        "geometrie": {
-          "$ref": "#/$defs/Geometrie"
-        },
-        "heeftAlsAdres": {
-          "description": "Een Gebouw heeft nul of meer Adressen",
-          "type": "array",
-          "items": {
-            "$ref": "#/$defs/Adres"
-          },
-          "minItems": 0
-        },
-        "isGeregistreerdMet": {
-          "$ref": "#/$defs/Registratiegegevens"
-        }
-      }
-    },
-    "Geometrie": {
-      "title": "Geometrie",
-      "type": "object",
-      "required": [
-        "bovenaanzicht",
-        "maaiveld",
-        "3d"
-      ],
-      "properties": {
-        "bovenaanzicht": {
-          "$ref": "#/$defs/polygonGeoJSON"
-        },
-        "maaiveld": {
-          "$ref": "#/$defs/multipolygonGeoJSON"
-        },
-        "3d": {
-          "$ref": "#/$defs/MultiPolyhedron"
         }
       }
     },
@@ -168,7 +94,7 @@
         "huisnummer",
         "plaatsnaam",
         "isHoofdadres",
-        "isGeregistreerdMet"
+        "geregistreerdMet"
       ],
       "properties": {
         "identificatie": {
@@ -195,7 +121,7 @@
           "description": "Een door of namens het gemeentebestuur ten aanzien van een adresseerbaar object toegekende toevoeging aan een huisnummer in de vorm van een alfanumeriek teken.",
           "type": [
             "string",
-            null
+            "null"
           ],
           "pattern": "^[a-zA-Z]{1}$"
         },
@@ -203,7 +129,7 @@
           "description": "Een door of namens het gemeentebestuur ten aanzien van een adresseerbaar object toegekende nadere toevoeging aan een huisnummer of een combinatie van huisnummer en huisletter.",
           "type": [
             "string",
-            null
+            "null"
           ],
           "pattern": "^[0-9a-zA-Z]{1,4}$"
         },
@@ -211,7 +137,7 @@
           "description": "De door PostNL vastgestelde code behorende bij een bepaalde combinatie van een straatnaam en een huisnummer.",
           "type": [
             "string",
-            null
+            "null"
           ],
           "pattern": "^[1-9][0-9]{3}[A-Z]{2}$"
         },
@@ -223,7 +149,7 @@
           "description": "Indicatie of het adres een hoofdadres is.",
           "type": "boolean"
         },
-        "isGeregistreerdMet": {
+        "geregistreerdMet": {
           "$ref": "#/$defs/Registratiegegevens"
         }
       }
@@ -250,7 +176,7 @@
       "required": [
         "kenmerk",
         "wasGeneratedBy",
-        "heeftAlsOnderwerp"
+        "onderwerp"
       ],
       "properties": {
         "kenmerk": {
@@ -262,8 +188,8 @@
           "title": "wasGeneratedBy",
           "$ref": "#/$defs/PropertyMappingExecution"
         },
-        "heeftAlsOnderwerp": {
-          "title": "heeftAlsOnderwerp",
+        "onderwerp": {
+          "title": "onderwerp",
           "$ref": "#/$defs/Object"
         }
       }
@@ -290,8 +216,7 @@
       "required": [
         "kenmerk",
         "kenmerkpad",
-        "heeftAlsHerkomst",
-        "heeftAlsOnderwerp"
+        "onderwerp"
       ],
       "properties": {
         "kenmerk": {
@@ -306,10 +231,13 @@
         "heeftAlsHerkomst": {
           "title": "heeftAlsHerkomst",
           "description": "Een Brongegeven heeft als herkomst een Bronregistratie.",
-          "$ref": "#/$defs/Bronregistratie"
+          "type": [
+            { "$ref": "#/$defs/Bronregistratie" },
+            "null"
+          ]
         },
-        "heeftAlsOnderwerp": {
-          "title": "heeftAlsOnderwerp",
+        "onderwerp": {
+          "title": "onderwerp",
           "description": "Brongegeven hoort bij één Bronobject.",
           "$ref": "#/$defs/Bronobject"
         }
@@ -325,11 +253,11 @@
         },
         {
           "required": [
-            "heeftAlsWaarde"
+            "waarde"
           ],
           "properties": {
-            "heeftAlsWaarde": {
-              "title": "heeftAlsWaarde",
+            "waarde": {
+              "title": "waarde",
               "description": "BronRelatieGegeven heeft als waarde een Bronobject.",
               "$ref": "#/$defs/Bronobject"
             }
@@ -369,7 +297,7 @@
         "naam": {
           "title": "naam",
           "description": "De naam van de Bronregistratie.",
-          "$ref": "#/$defs/Registratie"
+          "type": "string"
         }
       }
     },
@@ -388,7 +316,27 @@
       }
     },
     "Object": {
-      "title": "Object"
+      "title": "Object",
+      "description": "Een object.",
+      "type": "object",
+      "required": [
+        "identificatie"
+      ],
+      "properties": {
+        "identificatie": {
+          "title": "identificatie",
+          "description": "De identificatie van het object.",
+          "type": "string"
+        },
+        "domein": {
+          "title": "domein",
+          "description": "Het type domein van het object.",
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
     },
     "GeorkestreerdComplexGegeven": {
       "title": "GeorkestreerdComplexGegeven",
@@ -501,7 +449,11 @@
       "properties": {
         "segments": {
           "title": "segments",
-          "type": "string"
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
         },
         "references": {
           "title": "references",
@@ -590,38 +542,6 @@
     "vlak": {
       "title": "vlak",
       "$ref": "#/$defs/polygonGeoJSON"
-    },
-    "ObjectTypeMapping": {
-      "title": "ObjectTypeMapping",
-      "type": "object",
-      "properties": {
-        "propertyMapping": {
-          "title": "propertyMapping",
-          "type": "array",
-          "items": {
-            "$ref": "#/$defs/PropertyMapping"
-          },
-          "minItems": 0
-        }
-      }
-    },
-    "ObjectTypeMappingExecution": {
-      "title": "ObjectTypeMappingExecution",
-      "type": "object",
-      "required": [
-        "used",
-        "wasInformedBy"
-      ],
-      "properties": {
-        "used": {
-          "title": "used",
-          "$ref": "#/$defs/ObjectTypeMapping"
-        },
-        "wasInformedBy": {
-          "title": "wasInformedBy",
-          "$ref": "#/$defs/PropertyMappingExecution"
-        }
-      }
     },
     "PropertyMapping": {
       "title": "PropertyMapping",
@@ -756,7 +676,7 @@
           "enum": ["Polyhedron"]
         },
         "coordRefSys": {
-          "$ref": "coordrefsys.json"
+          "$ref": "#/$defs/coordrefsys"
         },
         "coordinates": {
           "type": "array",
@@ -792,7 +712,7 @@
           "enum": ["MultiPolyhedron"]
         },
         "coordRefSys": {
-          "$ref": "coordrefsys.json"
+          "$ref": "#/$defs/coordrefsys"
         },
         "coordinates": {
           "type": "array",
@@ -835,6 +755,65 @@
       "maxItems": 6,
       "items": {
         "type": "number"
+      }
+    },
+    "coordrefsys": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/single-refsys"
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/single-refsys"
+          }
+        }
+      ]
+    },
+    "single-refsys": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/refsys-simpleref"
+        },
+        {
+          "$ref": "#/$defs/refsys-byref"
+        },
+        {
+          "$ref": "#/$defs/refsys-custom"
+        }
+      ]
+    },
+    "refsys-simpleref": {
+      "type": "string",
+      "format": "uri"
+    },
+    "refsys-byref": {
+      "type": "object",
+      "required": ["type", "href"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["Reference"]
+        },
+        "href": {
+          "type": "string",
+          "format": "uri"
+        },
+        "epoch": {
+          "type": "number"
+        }
+      }
+    },
+    "refsys-custom": {
+      "type": "object",
+      "required": ["type"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "not": {
+            "enum": ["Reference"]
+          }
+        }
       }
     }
   }
