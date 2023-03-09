@@ -231,9 +231,9 @@
         "heeftAlsHerkomst": {
           "title": "heeftAlsHerkomst",
           "description": "Een Brongegeven heeft als herkomst een Bronregistratie.",
-          "type": [
-            { "$ref": "#/$defs/Bronregistratie" },
-            "null"
+          "oneOf": [
+            {"$ref":"#/$defs/Bronregistratie"},
+            {"type": "null"}
           ]
         },
         "onderwerp": {
