@@ -215,17 +215,12 @@
       "type": "object",
       "required": [
         "kenmerk",
-        "kenmerkpad",
         "onderwerp"
       ],
       "properties": {
         "kenmerk": {
           "title": "kenmerk",
           "description": "De naam van het attribuut of de relatie van het Brongegeven.",
-          "type": "string"
-        },
-        "kenmerkpad": {
-          "title": "kenmerkpad",
           "type": "string"
         },
         "heeftAlsHerkomst": {
