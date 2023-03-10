@@ -2,13 +2,8 @@ package nl.geostandaarden.product.gebouw;
 
 import io.carml.engine.function.FnoFunction;
 import io.carml.engine.function.FnoParam;
-import org.eclipse.rdf4j.model.ValueFactory;
-import org.eclipse.rdf4j.model.impl.SimpleValueFactory;
 
 public class GebouwFunctions {
-
-//  private static final ValueFactory VALUE_FACTORY = SimpleValueFactory.getInstance();
-
   private static final String FN = "http://geostandaarden.nl/id/function/";
 
   @FnoFunction(FN + "getPredicateIri")
