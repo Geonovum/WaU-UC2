@@ -223,8 +223,8 @@
           "description": "De naam van het attribuut of de relatie van het Brongegeven.",
           "type": "string"
         },
-        "heeftAlsHerkomst": {
-          "title": "heeftAlsHerkomst",
+        "bronregistratie": {
+          "title": "bronregistratie",
           "description": "Een Brongegeven heeft als herkomst een Bronregistratie.",
           "oneOf": [
             {"$ref":"#/$defs/Bronregistratie"},
